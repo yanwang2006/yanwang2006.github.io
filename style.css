@@ -849,6 +849,10 @@ blockquote p {
   text-align: center;
 }
 
+.blog-grid-left .content {
+  text-align: left;
+}
+
 .post-wrap {
   position: relative;
   overflow: hidden;
