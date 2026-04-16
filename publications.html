@@ -1,209 +1,2031 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Research Website of Dr. Yan Wang</title>
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/simplegrid.css">
-        <link rel="stylesheet" href="css/icomoon.css">
-        <link rel="stylesheet" href="css/lightcase.css">
-        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
-        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
-        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications and Research Record | Dr. Yan Wang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --panel: #ffffff;
+      --panel-2: #f9fbff;
+      --text: #1b2430;
+      --muted: #5d6b82;
+      --line: #dbe3ef;
+      --accent: #0f4c81;
+      --accent-2: #1a73b8;
+      --shadow: 0 16px 40px rgba(16, 36, 64, 0.08);
+      --radius: 20px;
+      --maxw: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(26,115,184,0.09), transparent 28%),
+        linear-gradient(180deg, #eef4fb 0%, #f8fbfe 180px, var(--bg) 100%);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(var(--maxw), calc(100% - 32px)); margin: 0 auto; }
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: rgba(246,248,252,0.88);
+      border-bottom: 1px solid rgba(219,227,239,0.8);
+    }
+    .site-header .container {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0;
+      gap: 16px;
+    }
+    .brand { font-weight: 800; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase; }
+    .top-nav { display:flex; flex-wrap: wrap; gap: 10px; }
+    .top-nav a {
+      padding: 10px 14px; border-radius: 999px; color: var(--muted);
+      background: rgba(255,255,255,0.7); border: 1px solid transparent;
+      font-size: 0.95rem;
+    }
+    .top-nav a:hover { color: var(--accent); border-color: var(--line); text-decoration:none; }
+    .hero { padding: 48px 0 28px; }
+    .hero-card {
+      background: linear-gradient(135deg, rgba(15,76,129,0.98), rgba(26,115,184,0.94));
+      color: white;
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-card::after {
+      content: "";
+      position: absolute; inset: auto -60px -60px auto;
+      width: 260px; height: 260px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.22), rgba(255,255,255,0.02) 68%, transparent 70%);
+      pointer-events:none;
+    }
+    .eyebrow {
+      font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; opacity: .88; font-weight:700;
+    }
+    h1 {
+      margin: 10px 0 12px;
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      font-weight: 700;
+    }
+    .hero p {
+      max-width: 850px; margin: 0;
+      font-size: 1.06rem; color: rgba(255,255,255,0.92);
+    }
+    .hero-actions {
+      margin-top: 22px; display:flex; flex-wrap:wrap; gap:12px;
+    }
+    .hero-actions a {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 11px 16px; border-radius: 12px;
+      background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.18);
+      font-weight: 600;
+    }
+    .hero-actions a.primary { background: white; color: var(--accent); }
+    .hero-actions a:hover { text-decoration:none; transform: translateY(-1px); }
+    .stats {
+      display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:16px;
+      margin: 22px 0 6px;
+    }
+    .stat-card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+      padding: 18px 20px; box-shadow: var(--shadow);
+    }
+    .stat-card .value { font-size: 1.8rem; font-weight: 800; color: var(--accent); line-height:1; }
+    .stat-card .label { margin-top: 8px; color: var(--muted); font-weight: 600; }
+    .quick-links {
+      margin: 24px 0 8px; display:flex; flex-wrap:wrap; gap:10px;
+    }
+    .quick-links a {
+      padding: 10px 14px; border-radius: 12px; background: var(--panel);
+      border: 1px solid var(--line); color: var(--text); font-weight: 600;
+      box-shadow: 0 8px 20px rgba(16,36,64,0.04);
+    }
+    .quick-links a:hover { text-decoration:none; color: var(--accent); }
+    .section {
+      padding: 16px 0 8px;
+    }
+    .section-head {
+      display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:18px;
+    }
+    .section-head h2 {
+      margin:0; font-family:"Source Serif 4", Georgia, serif; font-size:2rem; line-height:1.1;
+    }
+    .section-head p { margin: 8px 0 0; color: var(--muted); max-width: 780px; }
+    .highlight-grid {
+      display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px;
+    }
+    .highlight-card {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid var(--line); border-radius: 20px; padding: 20px;
+      box-shadow: var(--shadow);
+    }
+    .highlight-meta {
+      display:inline-block; padding: 4px 10px; border-radius: 999px;
+      background: rgba(26,115,184,0.1); color: var(--accent); font-weight:700; font-size:.86rem;
+    }
+    .highlight-card h3 {
+      margin: 12px 0 10px; font-size: 1.08rem; line-height: 1.35;
+    }
+    .highlight-card p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .toolbar {
+      position: sticky; top: 72px; z-index: 20;
+      background: rgba(246,248,252,0.88); backdrop-filter: blur(10px);
+      padding: 12px 0 14px;
+    }
+    .toolbar-card {
+      display:grid; grid-template-columns: 1.6fr auto; gap: 12px;
+      background: var(--panel); border:1px solid var(--line); border-radius:18px;
+      padding: 14px; box-shadow: var(--shadow);
+    }
+    .search-wrap input {
+      width: 100%; padding: 14px 16px; border-radius: 12px;
+      border: 1px solid var(--line); font: inherit; color: var(--text); background: #fff;
+    }
+    .filter-links {
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:flex-end;
+    }
+    .filter-links a {
+      padding: 10px 12px; border-radius: 10px; background: #f5f8fd; border:1px solid var(--line); color: var(--muted); font-weight:600;
+    }
+    .filter-links a:hover { text-decoration:none; color: var(--accent); }
+    .record-section {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 22px;
+      box-shadow: var(--shadow); margin: 18px 0; overflow: hidden;
+    }
+    .record-section summary {
+      list-style: none; display:flex; align-items:center; justify-content:space-between;
+      gap: 20px; padding: 22px 24px; cursor:pointer;
+      background: linear-gradient(180deg, rgba(250,252,255,1), rgba(245,248,253,1));
+      border-bottom: 1px solid rgba(219,227,239,0.85);
+    }
+    .record-section summary::-webkit-details-marker { display:none; }
+    .record-section h2 { margin:0; font-size:1.35rem; }
+    .section-subtitle { margin: 6px 0 0; color: var(--muted); font-size: .95rem; }
+    .summary-hint {
+      color: var(--muted); font-weight:700; font-size:.92rem;
+      padding-left: 18px; position:relative;
+    }
+    .summary-hint::before {
+      content:"+";
+      position:absolute; left:0; top:0; color: var(--accent); font-size:1rem;
+    }
+    details[open] .summary-hint::before { content:"–"; }
+    .record-list {
+      margin: 0; padding: 12px 24px 24px; list-style: none;
+      display:flex; flex-direction:column; gap: 14px;
+      counter-reset: item;
+    }
+    .record-item {
+      display:grid; grid-template-columns: 86px 1fr; gap: 14px;
+      background: #fff; border: 1px solid #edf2f8; border-radius: 16px;
+      padding: 16px 18px;
+    }
+    .record-header {
+      display:flex; flex-direction:column; align-items:flex-start; gap:8px;
+      min-width: 0;
+    }
+    .record-number {
+      font-weight: 800; color: var(--accent); font-size: 1.05rem;
+    }
+    .year-badge {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 4px 10px; border-radius: 999px; background: rgba(15,76,129,0.08); color: var(--accent);
+      font-size: .82rem; font-weight: 700;
+    }
+    .record-body p { margin: 0; }
+    .entry-notes {
+      margin: 10px 0 0; padding-left: 18px; color: var(--muted);
+    }
+    .entry-notes li { margin: 4px 0; }
+    .notation {
+      margin-top: 14px; color: var(--muted); font-size: .95rem;
+    }
+    .footer-note {
+      color: var(--muted); font-size: .94rem; padding: 8px 0 36px;
+    }
+    .hidden-by-search { display: none !important; }
 
-        <!-- Google Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    @media (max-width: 980px) {
+      .stats, .highlight-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .toolbar-card { grid-template-columns: 1fr; }
+      .filter-links { justify-content:flex-start; }
+    }
+    @media (max-width: 700px) {
+      .site-header .container { flex-direction: column; align-items: flex-start; }
+      .hero-card { padding: 28px 22px; border-radius: 22px; }
+      .stats, .highlight-grid { grid-template-columns: 1fr; }
+      .record-item { grid-template-columns: 1fr; }
+      .record-header { flex-direction: row; align-items: center; }
+      .record-list { padding: 10px 16px 18px; }
+      .record-section summary { padding: 18px 16px; }
+      .top-nav { gap: 8px; }
+      .top-nav a, .quick-links a { font-size: .92rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Yan Wang Research</div>
+      <nav class="top-nav" aria-label="Section navigation">
+        <a href="index.html">Home</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#records">Research record</a>
+        <a href="#journal-papers">Journal papers</a>
+        <a href="#talks">Talks</a>
+        <a href="#posters">Posters</a>
+      </nav>
+    </div>
+  </header>
 
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-           <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-           <!--[if lt IE 9]>
-             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-           <![endif]-->
-        </head>
-        <body id="home">
-            <!-- Header -->
-            <header id="top-header" class="header-home">
-                <div class="grid">
-                    <div class="col-1-1">
-                        <div class="content">
-                            <div class="logo-wrap">
-                                <a href="#0" class="logo">Nevada</a>
-                            </div>
-                            <nav class="navigation">
-                                <input type="checkbox" id="nav-button">
-                                <label for="nav-button" onclick></label>
-                                <ul class="nav-container">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#work">Research</a></li>
-                                    <li><a href="#publications">Publications</a></li>
-                                    <li><a href="#education">Education</a></li>
-                                    <li><a href="#team">People</a></li>
-                                    <li><a href="#team">News</a></li>
-                                    <li><a href="#contact">Positions</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- End Header -->
-
-            <!-- End Parallax Section -->
-
-            <!-- CurveUp -->
-            <svg class="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-            </svg>
-
-            <!-- Publications Section -->
-            <div class="wrap blog-grid-left grey" id="publications">
-                <div class="grid grid-pad">
-                    <div class="content" >
-                        <h2>Publications</h2>
-                        <a class="btn read-more" href="https://scholar.google.com/citations?user=AMlEppAAAAAJ&hl=en">Google Scholar</a>
-                        <a class="btn read-more" href="https://orcid.org/0000-0001-9474-6396">ORCID</a>
-                        <a class="btn read-more" href="https://www.webofscience.com/wos/author/record/1019733">ResearcherID</a>
-
-                    <div class="col-1-1 service-box service-4" >
-                        <div class="content">
-                            <div class="service-entry">
-                                <h3>Journal Papers</h3>
-                                <p>47. Iyyappa Rajan Panneerselvam, Haoran Cui, Theodore Maranets, Yan Wang*, “Disorder-dominated and scattering-dominated thermal transport in clathrate hydrates,” Computational Materials Science 244 (2024): 113189.</p>
-                                <p>46. Maranets, Theodore, Milad Nasiri, and Yan Wang*. "Influence of spatial coherence on phonon transmission across aperiodically arranged interfaces." Physics Letters A 512 (2024): 129572.</p>
-                                <p>45. (Review) Kafil, Vala, Benjamin Sreenan, Mustafa Hadj-Nacer, Yan Wang, Jihwan Yoon, Miles Greiner, Pengbo Chu, Xiaoliang Wang, M. Sami Fadali, and Xiaoshan Zhu. "Review of Noble Metal and Metal-Oxide-Semiconductor Based Chemiresitive Hydrogen Sensors." Sensors and Actuators A: Physical (2024): 115440.</p>
-                                <p>44. Cui, Haoran, Tengfei Ma, and Yan Wang. "Elucidating Optimal Nanohole Structures for Suppressing Phonon Transport in Nanomeshes." 2D Materials (2024).</p>
-                                <p>43. Bi, Kun, Xinyu Jiang, Haofan Sun, Yan Dou, Richard Nile, Dini Wang, Fazlay Rubbi et al. "Tuning the water interlayer spacer of microwave-synthesized holey graphene films towards high performance supercapacitor application." 2D Materials 11, no. 3 (2024): 035021.</p>
-                                <p>42. (Review) Wang, Dini, Yan Dou, Xing Zhang, Kun Bi, Iyyappa Rajan Panneerselvam, Haofan Sun, Xinyu Jiang et al. "Manufacturing and applications of multi-functional holey two-dimensional nanomaterials–A review." Nano Today 55 (2024): 102162.</p>
-                                <p>41. Maranets, Theodore, Milad Nasiri, and Yan Wang. "Influence of spatial coherence on phonon transmission across aperiodically arranged interfaces." Physics Letters A (2024): 129572.</p>
-                                <p>40. (Invited) Maranets, Theodore, Haoran Cui, and Yan Wang. "Lattice thermal conductivity of embedded nanoparticle composites: the role of particle size distribution." Nanotechnology 35, no. 5 (2023): 055701.</p>
-                                <p>39. Maranets, Theodore, and Yan Wang. "Ballistic phonon lensing by the non-planar interfaces of embedded nanoparticles." New Journal of Physics 25, no. 10 (2023): 103038.</p>
-                                <p>38. Kafil, Vala, John Liles III, Lucia Coello-Poole, Bryan Lee, Adam Sjolund, Yan Wang, Jihwan Yoon, Miles Greiner, Mustafa Hadj-Nacer, and Xiaoshan Zhu. "Highly Sensitive Detection of Hydrogen Gas Using Nanoporous Composites of Halloysite Nanotubes and Palladium." ACS Applied Electronic Materials 5, no. 9 (2023): 5202-5214.</p>
-                                <p>37. Mozafarifard, Milad, Yiliang Liao, Qiong Nian, and Yan Wang. "Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport." International Journal of Heat and Mass Transfer 202 (2023): 123759.</p>
-                                <p>36. Ma, Tengfei, and Yan Wang. "Ex-situ modification of lattice thermal transport through coherent and incoherent heat baths." Materials Today Physics 29 (2022): 100884.</p>
-                                <p>35. Logeshwaran, Natarajan, Iyyappa Rajan Panneerselvam, Shanmugam Ramakrishnan, Ramasamy Santhosh Kumar, Ae Rhan Kim, Yan Wang, and Dong Jin Yoo. "Quasihexagonal Platinum Nanodendrites Decorated over CoS2‐N‐Doped Reduced Graphene Oxide for Electro‐Oxidation of C1‐, C2‐, and C3‐Type Alcohols." Advanced Science 9, no. 8 (2022): 2105344.</p>
-                                <p>34. Bi, Kun, Dini Wang, Rui Dai, Lei Liu, Yan Wang, Yongfeng Lu, Yiliang Liao, Ling Ding, Houlong Zhuang, and Qiong Nian. "Scalable nanomanufacturing of holey graphene via chemical etching: an investigation into process mechanisms." Nanoscale 14, no. 12 (2022): 4762-4769.</p>
-                                <p>33. Ma, Tengfei, and Yan Wang. "Giant reduction in thermal conductivity of single-chain polyvinylidene fluoride (PVDF) under external tensile strain." Physical Chemistry Chemical Physics 24, no. 18 (2022): 11315-11321.</p>
-                                <p>32. Panneerselvam, Iyyappa Rajan, Pranay Chakraborty, Qiong Nian, Yongfeng Lu, Yiliang Liao, and Yan Wang. "First-principles study of the impact of chemical doping and functional groups on the absorption spectra of graphene." Semiconductor Science and Technology 37, no. 2 (2021): 025013.</p>
-                                <p>31. Su, Yancai, Yan Wang, Lei Li, Chengliang Zhang, Weifeng Li, Yuexia Lv, and Mengli Li. "Research on Heat Transfer Enhancement of Vortex-Induced Vibration of Side-by-Side Double Tubes." Journal of Thermophysics and Heat Transfer 35, no. 3 (2021): 627-633.</p>
-                                <p>30. Dai, Wen, Le Lv, Tengfei Ma, Xiangze Wang, Junfeng Ying, Qingwei Yan, Xue Tan et al. "Multiscale structural modulation of anisotropic graphene framework for polymer composites achieving highly efficient thermal energy management." Advanced Science 8, no. 7 (2021): 2003734.</p>
-                                <p>29. Liu, Yida, Run Hu, Yan Wang, Jinglong Ma, Zhangcan Yang, and Xiaobing Luo. "Big-data-accelerated aperiodic Si/Ge superlattice prediction for quenching thermal conduction via pattern analysis." Energy and AI 3 (2021): 100046.</p>
-                                <p>28. Panneerselvam, Iyyappa Rajan, Man Hea Kim, Carlos Baldo, Yan Wang, and Mahalakshmi Sahasranaman. "Strain engineering of polar optical phonon scattering mechanism–an effective way to optimize the power-factor and lattice thermal conductivity of ScN." Physical Chemistry Chemical Physics 23, no. 40 (2021): 23288-23302.</p>
-                                <p>27. Chakraborty, Pranay, Isaac Armstrong Chiu, Tengfei Ma, and Yan Wang. "Complex temperature dependence of coherent and incoherent lattice thermal transport in superlattices." Nanotechnology 32, no. 6 (2020): 065401.</p>
-                                <p>26. Ma, Tengfei, Cheng-Te Lin, and Yan Wang. "The dimensionality effect on phonon localization in graphene/hexagonal boron nitride superlattices." 2D Materials 7, no. 3 (2020): 035029.</p>
-                                <p>25. Wang, Dini, Rui Dai, Xing Zhang, Lei Liu, Houlong Zhuang, Yongfeng Lu, Yan Wang, Yiliang Liao, and Qiong Nian. "Scalable and controlled creation of nanoholes in graphene by microwave-assisted chemical etching for improved electrochemical properties." Carbon 161 (2020): 880-891.</p>
-                                <p>24. Chakraborty, Pranay, Yida Liu, Tengfei Ma, Xixi Guo, Lei Cao, Run Hu, and Yan Wang. "Quenching thermal transport in aperiodic superlattices: a molecular dynamics and machine learning study." ACS applied materials & interfaces 12, no. 7 (2020): 8795-8804.</p>
-                                <p>23. Ma, Tengfei, Pranay Chakraborty, Xixi Guo, Lei Cao, and Yan Wang. "First-principles modeling of thermal transport in materials: achievements, opportunities, and challenges." International Journal of Thermophysics 41 (2020): 1-37.</p>
-                                <p>22. Wu, Shenghao, Guoping Xiong, Huachao Yang, Yikuan Tian, Biyao Gong, Huiwen Wan, Yan Wang et al. "Scalable production of integrated graphene nanoarchitectures for ultrafast solar-thermal conversion and vapor generation." Matter 1, no. 4 (2019): 1017-1032.</p>
-                                <p>21. Dai, Wen, Tengfei Ma, Qingwei Yan, Jingyao Gao, Xue Tan, Le Lv, Hao Hou et al. "Metal-level thermally conductive yet soft graphene thermal interface materials." ACS nano 13, no. 10 (2019): 11561-11571.</p>
-                                <p>20. Zahiri, Amir Hassan, Pranay Chakraborty, Yan Wang, and Lei Cao. "Strong strain hardening in ultrafast melt-quenched nanocrystalline Cu: The role of fivefold twins." Journal of Applied Physics 126, no. 7 (2019).</p>
-                                <p>19. Wu, Shenghao, Guoping Xiong, Huachao Yang, Biyao Gong, Yikuan Tian, Chenxuan Xu, Yan Wang et al. "Multifunctional solar waterways: plasma‐enabled self‐cleaning nanoarchitectures for energy‐efficient desalination." Advanced Energy Materials 9, no. 30 (2019): 1901286.</p>
-                                <p>18. Chakraborty, Pranay, Tengfei Ma, Lei Cao, and Yan Wang. "Significantly enhanced convective heat transfer through surface modification in nanochannels." International Journal of Heat and Mass Transfer 136 (2019): 702-708.</p>
-                                <p>17. Li, Xiangyu, Wonjun Park, Yan Wang, Yong P. Chen, and Xiulin Ruan. "Reducing interfacial thermal resistance between metal and dielectric materials by a metal interlayer." Journal of Applied Physics 125, no. 4 (2019).</p>
-                                <p>16. Chakraborty, Pranay, Guoping Xiong, Lei Cao, and Yan Wang. "Lattice thermal transport in superhard hexagonal diamond and wurtzite boron nitride: A comparative study with cubic diamond and cubic boron nitride." Carbon 139 (2018): 85-93.</p>
-                                <p>15. Lu, Zexi, Yan Wang, and Xiulin Ruan. "The critical particle size for enhancing thermal conductivity in metal nanoparticle-polymer composites." Journal of Applied Physics 123, no. 7 (2018).</p>
-                                <p>14. Chakraborty, Pranay, Tengfei Ma, Amir Hassan Zahiri, Lei Cao, and Yan Wang. "Carbon-based materials for thermoelectrics." Advances in Condensed Matter Physics 2018 (2018).</p>
-                                <p>13. Chakraborty, Pranay, Lei Cao, and Yan Wang. "Ultralow lattice thermal conductivity of the random multilayer structure with lattice imperfections." Scientific reports 7, no. 1 (2017): 8134.</p>
-                                <p>12. Wang, Yan, Zexi Lu, and Xiulin Ruan. "First principles calculation of lattice thermal conductivity of metals considering phonon-phonon and phonon-electron scattering." Journal of applied Physics 119, no. 22 (2016).</p>
-                                <p>11. Lu, Zexi, Yan Wang, and Xiulin Ruan. "Metal/dielectric thermal interfacial transport considering cross-interface electron-phonon coupling: Theory, two-temperature molecular dynamics, and thermal circuit." Physical Review B 93, no. 6 (2016): 064302.</p>
-                                <p>10. Wang, Yan, Zexi Lu, Ajit K. Roy, and Xiulin Ruan. "Effect of interlayer on interfacial thermal transport and hot electron cooling in metal-dielectric systems: An electron-phonon coupling perspective." Journal of Applied Physics 119, no. 6 (2016).</p>
-                                <p>9. Wang, Yan, Chongjie Gu, and Xiulin Ruan. "Optimization of the random multilayer structure to break the random-alloy limit of thermal conductivity." Applied Physics Letters 106, no. 7 (2015).</p>
-                                <p>8. Wang, Yan, Haoxiang Huang, and Xiulin Ruan. "Decomposition of coherent and incoherent phonon conduction in superlattices and random multilayers." Physical Review B 90, no. 16 (2014): 165406.</p>
-                                <p>7. Wang, Yan, Ajit K. Vallabhaneni, Bo Qiu, and Xiulin Ruan. "Two-dimensional thermal transport in graphene: a review of numerical modeling studies." Nanoscale and Microscale Thermophysical Engineering 18, no. 2 (2014): 155-182.</p>
-                                <p>6. Wang, Yan, Ajit Vallabhaneni, Jiuning Hu, Bo Qiu, Yong P. Chen, and Xiulin Ruan. "Phonon lateral confinement enables thermal rectification in asymmetric single-material nanostructures." Nano letters 14, no. 2 (2014): 592-596.</p>
-                                <p>5. Finefrock, Scott W., Yan Wang, John B. Ferguson, James V. Ward, Haiyu Fang, Jonathan E. Pfluger, Douglas S. Dudis, Xiulin Ruan, and Yue Wu. "Measurement of thermal conductivity of pbte nanocrystal coated glass fibers by the 3ω method." Nano Letters 13, no. 11 (2013): 5006-5012.</p>
-                                <p>4. Wang, Yan, Bo Qiu, and Xiulin Ruan. "Edge effect on thermal transport in graphene nanoribbons: A phonon localization mechanism beyond edge roughness scattering." Applied Physics Letters 101, no. 1 (2012).</p>
-                                <p>3. Wang, Yan, Xiulin Ruan, and Ajit K. Roy. "Two-temperature nonequilibrium molecular dynamics simulation of thermal transport across metal-nonmetal interfaces." Physical Review B 85, no. 20 (2012): 205311.</p>
-                                <p>2. Wang, Yan, Siyu Chen, and Xiulin Ruan. "Tunable thermal rectification in graphene nanoribbons through defect engineering: a molecular dynamics study." Applied Physics Letters 100, no. 16 (2012).</p>
-                                <p>1. Hu, Jiuning, Yan Wang, Ajit Vallabhaneni, Xiulin Ruan, and Yong P. Chen. "Nonlinear thermal transport and negative differential thermal conductance in graphene nanoribbons." Applied Physics Letters 99, no. 11 (2011).</p>
-
-
-                                <h3>Conference Presentations and Seminars</h3>
-
-                                <p>37. (Best Presentation Award) Theodore Maranets*, Haoran Cui, and Yan Wang, "Thermal Transport in Embedded Nanoparticle Composites: A Molecular Dynamics Study of the Optimized Size Distribution," ASME IMECE 2023, New Orleans, Nov 2023</p>
-                                <p>36. Theodore Maranets and Yan Wang, "Atomistic investigation of phonon transport through nanoparticles," - Poster and Technical Presentation, APS March Meeting, Las Vegas, NV, March 9, 2023</p>
-                                <p>35. I. Panneerselvam*, M. Lotfpour, J. Ombogo, Y. Wang and L. Cao, Investigation of Transformation-Mediated Nano-Twin Nucleation Mechanisms in Magnesium Using Deep Neural Network Interatomic Potentials, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3, 2022.</p>
-                                <p>34. I. Panneerselvam* and Y. Wang, Formation Mechanism of Holey Graphene/graphene Oxide in Laser Heated Graphene Oxide-Hydrogen Peroxide Solution from Deep Neural Network Interatomic Potential, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3, 2022.</p>
-                                <p>33. I. Panneerselvam*, H. Cui, T. Ma and Y. Wang, Lattice Thermal Transport Properties of Methane Hydrates from Deep Neural Network Interatomic Potentials, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3, 2022.</p>
-                                <p>32. M. Mozafarifard*, Y. Wang, Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3 2022.</p>
-                                <p>31. H Cui*, T Ma and Y Wang, Comprehensive Investigation of Phonon Scattering and Phonon Coherence in Nanomesh Structures, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3 2022.</p>
-                                <p>30. T Maranets* and Y Wang, Molecular dynamics analysis of mode-resolved phonon scattering by embedded nanoparticles, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct 31-Nov 3, 2022</p>
-                                <p>29. (Invited Talk) Y Wang*, Engineering Phonons and Electrons Toward Improved Energy Efficiency, Thermal Management, and Laser Manufacturing, University of Houston, April, 2022</p>
-                                <p>28. (Invited Talk) Y Wang*, The Complex Role of Interfaces in Determining Phonon Transport in Two-Dimensional Materials, 2021 MRS Fall Meeting and Exhibit, Boston, Massachusetts.</p>
-                                <p>27. (Invited Talk) Y Wang*, Engineering Phonon Transport at Multiple Scales: Phonon Coherence and Localization, 21st Symposium on Thermophysical Properties, Boulder, CO, USA, June, 2021</p>
-                                <p>26. (Invited Panel Talk) Y Wang*, Reduced Phonon Transport in Disordered Materials: Scattering or Localization? The 2nd Pacific Rim Thermal Engineering Conference (PRTEC), Maui, Hawaii, Dec 13-17, 2019</p>
-                                <p>25. Y Wang*, Coherent and Incoherent Phonon Transport in Layered Structures, The 2nd Pacific Rim Thermal Engineering Conference (PRTEC), Maui, Hawaii, Dec 13-17, 2019</p>
-                                <p>24. P Chakraborty* and Y Wang, Physics-guided Machine-Learning Design of Aperiodic Superlattices with Maximum Localization of Coherent Phonons, 2020 TMS Annual Meeting & Exhibition, San Diego, CA, February 23-27, 2020</p>
-                                <p>23. P Chakraborty*, T Ma, L Cao and Y Wang, Optimization of Random Multilayer Structure through Physics-informed Machine Learning, ASME's International Mechanical Engineering Congress and Exposition (IMECE), Salt Lake City, Utah, Nov 11-14, 2019</p>
-                                <p>22. T Ma*, L Cao and Y Wang, The Effect of Dimensionality on Phonon Localization, ASME's International Mechanical Engineering Congress and Exposition (IMECE), Salt Lake City, Utah, Nov 11-14, 2019</p>
-                                <p>21. P Chakraborty*, L Cao and Y Wang, Probing the lower limit of lattice thermal transport in one-dimensional phononic crystals, ASME's International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
-                                <p>20. P Chakraborty, T Ma*, L Cao and Y Wang, Enhanced heat convection in nanochannels through surface engineering, ASME's International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
-                                <p>19. P Chakraborty*, T Ma, L Cao and Y Wang, Lattice thermal transport in superhard hexagonal diamond and wurtzite boron nitride under high temperature and/or high pressure, ASME's International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
-                                <p>18. T Ma* and Y Wang, Giant reduction of thermal transport in polyvinylidene fluoride under tensile strains, ASME's International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
-                                <p>17. (Department Seminar Series) Y Wang*, Nanoengineering of Materials for Improved Energy Efficiency and Thermal Management, Department of Mechanical Engineering, University of Nevada, Las Vegas, Apr 19, 2018</p>
-                                <p>16. P Chakraborty* and Y Wang, Enhancing convective heat transfer in nanochannels through surface modification, ASME 2017 International Mechanical Engineering Congress & Exposition, Tampa, Florida</p>
-                                <p>15. P Chakraborty* and Y Wang, Surface engineering for enhanced heat convection in nanochannels, ASME 2017 International Mechanical Engineering Congress & Exposition, Tampa, Florida</p>
-                                <p>14. P Chakraborty*, L Cao, and Y Wang, Hierarchical suppression of coherent and incoherent phonon transport in multilayered structures, ASME 2017 International Mechanical Engineering Congress & Exposition, Tampa, Florida</p>
-                                <p>13. P Chakraborty and Y Wang*, Understanding and Manipulating Coherent and Incoherent Phonon Transport in Multilayered Structures, 2017 MRS Spring Meeting & Exhibit, April 17-21, 2017, Phoenix, Arizona</p>
-                                <p>12. Y Wang and X Ruan*, Monte Carlo enabled spectral Boltzmann transport simulation for electron-phonon coupled thermal transport across metal-dielectric interfaces, ASME 2015 International Mechanical Engineering Congress & Exposition, Houston, Texas</p>
-                                <p>11. Y Wang, Z Lu, and X Ruan*, First-principles calculation of the electronic and lattice thermal conductivity of metals, ASME 2015 International Mechanical Engineering Congress & Exposition, Houston, Texas</p>
-                                <p>10. Z. Lu*, Y. Wang, and X. Ruan, “Two-temperature Molecular Dynamics Simulation with Non-local and Regional Electron-phonon Coupling,” ASME 2015 International Mechanical Engineering Congress & Exposition, Houston, Texas</p>
-                                <p>9. Y. Wang*, H. Huang, and X. Ruan, "Decomposition of coherent and incoherent phonon conduction in superlattice and random multilayers," ASME 2014 International Mechanical Engineering Congress & Exposition, Montreal, Canada</p>
-                                <p>8. Y. Wang*, T. Feng, J. Shi, Z. Lu, and X. Ruan, "Mode-resolved Boltzmann transport simulation of electron-phonon coupled thermal transport in metal-dielectric hetero-junctions," ASME 2014 International Mechanical Engineering Congress & Exposition, Montreal, Canada</p>
-                                <p>7. Y. Wang*, R. Paul, T. Fisher, and X. Ruan, "Thermal transport in single-layer graphene doped with h-BN islands," ASME 2014 International Mechanical Engineering Congress & Exposition, Montreal, Canada</p>
-                                <p>6. Y. Wang* and X. Ruan, "Phonon transport and electron-phonon coupled thermal transport in nanostructures," Nano TE/thermal Seminars, Purdue Univ., July 22, 2014</p>
-                                <p>5. Y. Wang* and X. Ruan,  "An Evaluation of Energy Transfer Pathways in Thermal Transport Across Solid/Solid Interfaces," 2013 MRS Spring Meeting & Exhibit, April 1-5, 2013, San Francisco, California</p>
-                                <p>4. Y. Wang* and X. Ruan, "Two-Temperature Molecular Dynamics Simulation of Thermal Transport Across Metal-Nonmetal Interfaces," ASME Micro/Nanoscale Heat & Mass Transfer International Conference Atlanta, Georgia, March 2012</p>
-                                <p>3. B. Qiu*, Y. Wang, Q. Zhao, and X. Ruan, "The effects of diameter and chirality in the thermal transport in free-standing and supported carbon-nanotubes," ASME Micro/Nanoscale Heat & Mass Transfer International Conference Atlanta, Georgia, March 2012</p>
-                                <p>2. Y. Wang* and X. Ruan, "Role of edge chirality and isotope doping in thermal transport and thermal rectification in graphene nanoribbons," ASME 2011 International Mechanical Engineering Congress & Exposition, Denver, CO, November 2011</p>
-                                <p>1. B. Qiu*, Y. Wang and X. Ruan, "Linear and Nonlinear Thermal Transport in Graphene: Molecular Dynamics Simulations," 2011 MRS Spring Meeting & Exhibit, San Francisco, April 2011</p>
-                            
-                                <h3>Conference Papers</h3>
-
-                                <p>1. Qiu, Bo, Yan Wang, Qing Zhao, and Xiulin Ruan. "The Effects of Diameter and Chirality in the Thermal Transport in Free-Standing and Supported Carbon-Nanotubes." In International Conference on Micro/Nanoscale Heat Transfer, vol. 54778, pp. 633-638. American Society of Mechanical Engineers, 2012.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="eyebrow">Publications, presentations, and research record</div>
+          <h1>Research Output of Dr. Yan Wang</h1>
+          <p>
+            A curated record of journal papers, conference papers, editorials, research tools, invited talks,
+            seminars, and selected poster presentations. This page has been updated with the most recent publication
+            and presentation entries from the latest curriculum vitae document.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="https://scholar.google.com/citations?user=AMlEppAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-9474-6396" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://www.webofscience.com/wos/author/record/1019733" target="_blank" rel="noopener">ResearcherID</a>
+          </div>
         </div>
-        <!-- End Publications Section -->
+
+        <div class="stats" aria-label="Research record summary">
+          <div class="stat-card"><div class="value">67</div><div class="label">Journal papers</div></div>
+          <div class="stat-card"><div class="value">7</div><div class="label">Conference papers</div></div>
+          <div class="stat-card"><div class="value">61</div><div class="label">Talks and seminars</div></div>
+          <div class="stat-card"><div class="value">19</div><div class="label">Selected posters</div></div>
+        </div>
+
+        <div class="quick-links" aria-label="Quick links">
+          <a href="#journal-papers">Jump to journal papers</a>
+          <a href="#conference-papers">Conference papers</a>
+          <a href="#tools">Research tools</a>
+          <a href="#talks">Seminars and talks</a>
+          <a href="#posters">Poster presentations</a>
+        </div>
+
+        <p class="notation">Notation: * indicates corresponding author and, where noted in the source document, Wang’s students and postdocs are identified accordingly.</p>
+      </div>
+    </section>
+
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Recent highlights</h2>
+            <p>Selected recent publications shown first to make the page easier to browse before moving into the full research record.</p>
+          </div>
+        </div>
+        <div class="highlight-grid">
+          
+    <article class="highlight-card">
+      <div class="highlight-meta">2026</div>
+      <h3>Energy Field-Assisted Additive Manufacturing of Engineering Thermoplastics,</h3>
+      <p>Ryan Coulter, Haoran Cui, Fazlay Rubbi, Lily Raymond, Yiliang Liao*, Yan Wang*, Yifei Jin*, “Energy Field-Assisted Additive Manufacturing of Engineering Thermoplastics,” Advanced Engineering Materials 2026, 0, e202502252...</p>
+    </article>
+
+    <article class="highlight-card">
+      <div class="highlight-meta">2026</div>
+      <h3>Lattice Thermal Transport in Polymers: Atomistic Insights, Modeling Advances, and Design Perspectives.</h3>
+      <p>(Invited Review; Feature Article) Cui, Haoran, Theodore Maranets, Yan Wang*, Yifei Jin*, and Lei Cao*. &quot;Lattice Thermal Transport in Polymers: Atomistic Insights, Modeling Advances, and Design Perspectives.&quot; Crystals 16,...</p>
+    </article>
+
+    <article class="highlight-card">
+      <div class="highlight-meta">2026</div>
+      <h3>Deep-neural-network molecular dynamics investigation of heat convection of water in graphene oxide nanochannel.</h3>
+      <p>Nasiri, Milad, Haoran Cui, Pranay Chakraborty, and Yan Wang*. &quot;Deep-neural-network molecular dynamics investigation of heat convection of water in graphene oxide nanochannel.&quot; International Communications in Heat and Mas...</p>
+    </article>
+
+    <article class="highlight-card">
+      <div class="highlight-meta">2026</div>
+      <h3>Ultrafast quenching leads to nanograined gallium nitride containing superlattice-like multi-phase domains.</h3>
+      <p>Lotfpour, Mehrab, Haoran Cui, Nolan Hagen, Milad Nasiri, Theodore Maranets, Yan Wang*, and Lei Cao*. &quot;Ultrafast quenching leads to nanograined gallium nitride containing superlattice-like multi-phase domains.&quot; Computatio...</p>
+    </article>
+
+    <article class="highlight-card">
+      <div class="highlight-meta">2025</div>
+      <h3>Molten Embedded Writing of End-Use Thermoplastics for Engineering Applications.</h3>
+      <p>Mitchell, Kellen, Aidan Shackleford, Sabinus Arthur, Chen Zhang, Evan Lim, Kurt Juarez, Erick Bandala et al., Yan Wang* (co-corresponding), &quot;Molten Embedded Writing of End-Use Thermoplastics for Engineering Applications....</p>
+    </article>
+
+    <article class="highlight-card">
+      <div class="highlight-meta">2025</div>
+      <h3>Coherent phonon flatband generated in GaAs/AlAs superlattices via layer-selective optical pumping.</h3>
+      <p>Ye, Zefang, Travis D. Frazer, Haoran Cui, Xun Jia, Feng He, Tengfei Ma, Stephen March et al., Yan Wang*, &quot;Coherent phonon flatband generated in GaAs/AlAs superlattices via layer-selective optical pumping.&quot; Nature Communi...</p>
+    </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="container">
+        <div class="toolbar-card">
+          <div class="search-wrap">
+            <label for="record-search" class="sr-only" style="position:absolute;left:-9999px;">Search research record</label>
+            <input id="record-search" type="search" placeholder="Search titles, authors, journals, conferences, or years">
+          </div>
+          <div class="filter-links">
+            <a href="#journal-papers">Papers</a>
+            <a href="#talks">Talks</a>
+            <a href="#posters">Posters</a>
+            <a href="#records">All sections</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="records">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Full research record</h2>
+            <p>Sections are collapsible to keep a long publication page readable. Use the search box above to filter entries instantly across the page.</p>
+          </div>
+        </div>
+        
+    <details class="record-section" open id="journal-papers">
+      <summary>
+        <div>
+          <h2>Journal Papers</h2>
+          <p class="section-subtitle">67 entries</p>
+        </div>
+        <span class="summary-hint">Expand</span>
+      </summary>
+      <ol class="record-list">
+        <li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">67.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>Ryan Coulter, Haoran Cui, Fazlay Rubbi, Lily Raymond, Yiliang Liao*, Yan Wang*, Yifei Jin*, “Energy Field-Assisted Additive Manufacturing of Engineering Thermoplastics,” Advanced Engineering Materials 2026, 0, e202502252.</p>
             
-            <!-- CurveDown -->
-            <svg class="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
-            </svg>
+        </div>
+    </li>
+<li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">66.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Review; Feature Article) Cui, Haoran, Theodore Maranets, Yan Wang*, Yifei Jin*, and Lei Cao*. &quot;Lattice Thermal Transport in Polymers: Atomistic Insights, Modeling Advances, and Design Perspectives.&quot; Crystals 16, no. 4 (2026): 242.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">65.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>Nasiri, Milad, Haoran Cui, Pranay Chakraborty, and Yan Wang*. &quot;Deep-neural-network molecular dynamics investigation of heat convection of water in graphene oxide nanochannel.&quot; International Communications in Heat and Mass Transfer 172 (2026): 110267.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">64.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>Lotfpour, Mehrab, Haoran Cui, Nolan Hagen, Milad Nasiri, Theodore Maranets, Yan Wang*, and Lei Cao*. &quot;Ultrafast quenching leads to nanograined gallium nitride containing superlattice-like multi-phase domains.&quot; Computational Materials Science 262 (2026): 114399.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">63.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Mitchell, Kellen, Aidan Shackleford, Sabinus Arthur, Chen Zhang, Evan Lim, Kurt Juarez, Erick Bandala et al., Yan Wang* (co-corresponding), &quot;Molten Embedded Writing of End-Use Thermoplastics for Engineering Applications.&quot; ACS Applied Materials &amp; Interfaces (2025).</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">62.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Ye, Zefang, Travis D. Frazer, Haoran Cui, Xun Jia, Feng He, Tengfei Ma, Stephen March et al., Yan Wang*, &quot;Coherent phonon flatband generated in GaAs/AlAs superlattices via layer-selective optical pumping.&quot; Nature Communications 16, no. 1 (2025): 8436.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">61.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Crosby, John, Haoran Cui*, and Yan Wang*. &quot;Significant ballistic thermal transport across graphene layers: effect of nanoholes and lithium intercalation.&quot; Applied Physics Letters 127, 082201 (2025)</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">60.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, Theodore*, and Yan Wang*. &quot;How phonon coherence develops and contributes to heat conduction in periodic and aperiodic superlattices.&quot; International Journal of Thermal Sciences 217 (2025): 110018.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">59.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, Theodore*, Evan Wallace Doe, and Yan Wang*. 2025. “Role of Interface Mixing on Coherent Heat Conduction in Periodic and Aperiodic Superlattices.” Journal of Physics Condensed Matter, July. <a href="https://doi.org/10.1088/1361-648x/adf36b." target="_blank" rel="noopener">https://doi.org/10.1088/1361-648x/adf36b.</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">58.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>(INVITED) Chakraborty, Pranay, Milad Nasiri, Haoran Cui, Theodore Maranets, and Yan Wang. &quot;A Comprehensive Investigation of the Two-Phonon Characteristics of Heat Conduction in Superlattices.&quot; Crystals 15, no. 7 (2025): 654.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">57.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, Haoran, Iyyappa Rajan Panneerselvam, Pranay Chakraborty, Qiong Nian, Yiliang Liao, and Yan Wang*. &quot;Significantly enhanced interfacial thermal transport between single-layer graphene and water through basal-plane oxidation.&quot; Carbon 234 (2025): 119910.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">56.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>(INVITED; Editor’s Choice) Nasiri, Milad, and Yan Wang*. &quot;Evolution of Phonon Spectral Energy Density in Superlattice Structures.&quot; Crystals 15, no. 5 (2025): 446.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">55.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Hua, Weijian, Cheng Zhang, Haoran Cui, Kellen Mitchell, Dale K. Hensley, Jihua Chen, Changwoo Do et al. (Yan Wang*, co-corresponding author) &quot;High‐Speed Embedded Ink Writing of Anatomic‐Size Organ Constructs.&quot; Advanced Science (2025): 2405980.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">54.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, Haoran, Theodore Maranets, Tengfei Ma, and Yan Wang*. &quot;Spectral heat flux redistribution upon interfacial transmission.&quot; Journal of Physics: Condensed Matter 37, no. 11 (2025): 115002.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">53.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, Haoran, Weijian Hua, Lei Cao, Yifei Jin*, and Yan Wang*. &quot;Deep-neural-network molecular dynamics investigation of phonon thermal transport in polyether ether ketone.&quot; Computational Materials Science 249 (2025): 113641.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">52.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Milad Mozafarifard and Yan Wang*, (2024). Lattice heat backflow dynamics in bi-metallic nanolayers subjected to ultrafast laser heating. International Journal of Heat and Mass Transfer, 232, 125910.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">51.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Claassen, M., Bingham, B., Chow, J. C., Watson, J. G., Chu, P., Wang, Y., &amp; Wang, X. (2024). Characterization of Lithium-ion Battery Fire Emissions—Part 2: Particle Size Distributions and Emission Factors. Batteries, 10(10), 366.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">50.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Kafil, V., Lee, B., Hadj-Nacer, M., Wang, Y., Yoon, J., Greiner, M., ... &amp; Zhu, X. (2024). Hydrogen sensing in different hydrogen-carrying gases using composites of PdSnO2 and halloysite nanotubes. Sensors and Actuators A: Physical, 376, 115622.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">49.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Panneerselvam, Iyyappa Rajan, Haoran Cui, Theodore Maranets, and Yan Wang*. &quot;Disorder-dominated and scattering-dominated thermal transport in clathrate hydrates.&quot; Computational Materials Science 244 (2024): 113189.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">48.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Claassen, M., Bingham, B., Chow, J. C., Watson, J. G., Wang, Y., &amp; Wang, X. (2024). Characterization of Lithium-Ion Battery Fire Emissions—Part 1: Chemical Composition of Fine Particles (PM2. 5). Batteries, 10(9), 301.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">47.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, Haoran., Maranets, Theodore, Ma, Tengfei, and Yan Wang* (2024). Spectral analysis of coherent and incoherent phonon transport in silicon nanomeshes. Physical Review B, 110(7), 075301.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">46.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Theodore Maranets, Yan Wang*, “Prominent phonon transmission across aperiodic superlattice through coherent mode-conversion.” Appl. Phys. Lett. 22 July 2024; 125 (4): 042205.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">45.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, Theodore, Milad Nasiri, and Yan Wang*. &quot;Influence of spatial coherence on phonon transmission across aperiodically arranged interfaces.&quot; Physics Letters A 512 (2024): 129572.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">44.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>(Review) Kafil, Vala, Benjamin Sreenan, Mustafa Hadj-Nacer, Yan Wang, Jihwan Yoon, Miles Greiner, Pengbo Chu, Xiaoliang Wang, M. Sami Fadali, and Xiaoshan Zhu*. &quot;Review of Noble Metal and Metal-Oxide-Semiconductor Based Chemiresitive Hydrogen Sensors.&quot; Sensors and Actuators A: Physical (2024): 115440.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">43.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, Haoran, Tengfei Ma, and Yan Wang*. &quot;Elucidating optimal nanohole structures for suppressing phonon transport in nanomeshes.&quot; 2D Materials 11, no. 3 (2024): 035026.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">42.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Kun Bi, Xinyu Jiang, Haofan Sun, Yan Dou, Richard Nile, Dini Wang, Fazlay Rubbi, Xing Zhang, Yan Wang, Yiliang Liao, Kailong Jin, Houlong Zhuang, Wonmo Kang, Qiong Nian, &quot;Tuning the water interlayer spacer of microwave-synthesized holey graphene films towards high performance supercapacitor application.&quot; 2D Materials 11, no. 3 (2024): 035021.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">41.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Wang, Dini, Yan Dou, Xing Zhang, Kun Bi, Iyyappa Rajan Panneerselvam, Haofan Sun, Xinyu Jiang, Yan Wang, Qiong Nian*, etc. &quot;Manufacturing and applications of multi-functional holey two-dimensional nanomaterials–A review.&quot; Nano Today 55 (2024): 102162.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">40.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>(INVITED) Maranets, Theodore, Haoran Cui, and Yan Wang*. &quot;Lattice thermal conductivity of embedded nanoparticle composites: the role of particle size distribution.&quot; Nanotechnology 35, no. 5 (2023): 055701.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">39.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, Theodore, and Yan Wang*. &quot;Ballistic phonon lensing by the non-planar interfaces of embedded nanoparticles.&quot; New Journal of Physics 25, no. 10 (2023): 103038.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">38.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>Kafil, Vala, John Liles III, Lucia Coello-Poole, Bryan Lee, Adam Sjolund, Yan Wang, Jihwan Yoon, Miles Greiner, Mustafa Hadj-Nacer, and Xiaoshan Zhu. &quot;Highly sensitive detection of hydrogen gas using nanoporous composites of halloysite nanotubes and palladium.&quot; ACS Applied Electronic Materials 5, no. 9 (2023): 5202-5214.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">37.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>Milad Mozafarifard, Yiliang Liao, Qiong Nian, and Yan Wang*. &quot;Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport.&quot; International Journal of Heat and Mass Transfer 202 (2023): 123759.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">36.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>Tengfei Ma and Yan Wang*, &quot;Ex-situ modification of lattice thermal transport through coherent and incoherent heat baths.&quot; Materials Today Physics (2022): 100884.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">35.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>Logeshwaran, Natarajan, Iyyappa Rajan Panneerselvam, Shanmugam Ramakrishnan, Ramasamy Santhosh Kumar, Ae Rhan Kim, Yan Wang, and Dong Jin Yoo*. &quot;Quasihexagonal Platinum Nanodendrites Decorated over CoS2‐N‐Doped Reduced Graphene Oxide for Electro‐Oxidation of C1‐, C2‐, and C3‐Type Alcohols.&quot; Advanced Science 9, no. 8 (2022): 2105344.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">34.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>K Bi, R Dai, L Liu, Y Wang, Y Lu, Y Liao, L Ding, H Zhang, and Q Nian*, Scalable Nanomanufacturing of Holey Graphene via Chemical Etching: An Investigation on Process Mechanisms, Nanoscale, In Press, 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">33.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>N Logeshwaran, I Rajan, S Ramakrishnan, R Kumar, AR Kim, Y Wang, and DJ Yoo. Quasihexagonal Platinum Nanodendrites Decorated over CoS2‐N‐Doped Reduced Graphene Oxide for Electro‐Oxidation of C1‐, C2‐, and C3‐Type Alcohols, Advanced Science (2022): 2105344.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2021">
+        <div class="record-header">
+            <span class="record-number">32.</span>
+            <span class="year-badge">2021</span>
+        </div>
+        <div class="record-body">
+            <p>I Rajan*, P Chakraborty, Q Nian, Y Lu, Y Liao*, and Y Wang*, First-principles study of the impact of chemical doping and functional groups on the absorption spectra of graphene, Semiconductor Science and Technology 37, no. 2 (2021): 025013.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2021">
+        <div class="record-header">
+            <span class="record-number">31.</span>
+            <span class="year-badge">2021</span>
+        </div>
+        <div class="record-body">
+            <p>I Rajan*, MH Kim, C Baldo III, Y Wang* and M Sahasranaman, Strain Engineering of Polar Optical Phonon Scattering Mechanism – An Effective Way to Optimize the Power-factor and Lattice Thermal Conductivity of ScN, Physical Chemistry Chemical Physics, 2021, <a href="https://doi.org/10.1039/D1CP02971A" target="_blank" rel="noopener">https://doi.org/10.1039/D1CP02971A</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2021">
+        <div class="record-header">
+            <span class="record-number">30.</span>
+            <span class="year-badge">2021</span>
+        </div>
+        <div class="record-body">
+            <p>Dai, W., Lv, L., Ma, T., Wang, X., Ying, J., Yan, Q., Tan, X., Gao, J., Xue, C., Yu, J., Yao, Y., Wei, Q., Sun, R., Wang, Y., Liu, T.-H., Chen, T., Xiang, R., Jiang, N., Xue, Q., Wong, C.-P., Maruyama, S., Lin, C.-T.*, Multiscale Structural Modulation of Anisotropic Graphene Framework for Polymer Composites Achieving Highly Efficient Thermal Energy Management,  Advanced Science, 2021, 8, 2003734. <a href="https://doi.org/10.1002/advs.202003734" target="_blank" rel="noopener">https://doi.org/10.1002/advs.202003734</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2021">
+        <div class="record-header">
+            <span class="record-number">29.</span>
+            <span class="year-badge">2021</span>
+        </div>
+        <div class="record-body">
+            <p>Y Liu, R Hu*, Y Wang*, J Ma, Z Yang, and X Luo, Big-data-accelerated aperiodic Si/Ge superlattice prediction for quenching thermal conduction via pattern analysis, Energy and AI 3 (2021): 100046. <a href="https://doi.org/10.1016/j.egyai.2020.100046." target="_blank" rel="noopener">https://doi.org/10.1016/j.egyai.2020.100046.</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2020">
+        <div class="record-header">
+            <span class="record-number">28.</span>
+            <span class="year-badge">2020</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Research Paper) P Chakraborty, I Chiu, T Ma, and Y Wang*, Complex temperature dependence of coherent and incoherent lattice thermal transport in superlattices, Nanotechnology 32, no. 6 (2020): 065401. <a href="https://doi.org/10.1088/1361-6528/abc2ef" target="_blank" rel="noopener">https://doi.org/10.1088/1361-6528/abc2ef</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2020">
+        <div class="record-header">
+            <span class="record-number">27.</span>
+            <span class="year-badge">2020</span>
+        </div>
+        <div class="record-body">
+            <p>T Ma, C Lin, and Y Wang*, The dimensionality effect on phonon localization in graphene/hexagonal boron nitride superlattices, 2D Materials 7, no. 3 (2020): 035029, <a href="https://doi.org/10.1088/2053-1583/ab93e2" target="_blank" rel="noopener">https://doi.org/10.1088/2053-1583/ab93e2</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2020">
+        <div class="record-header">
+            <span class="record-number">26.</span>
+            <span class="year-badge">2020</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty, Y Liu, T Ma, X Guo, L Cao, R Hu*, and Y Wang*, Quenching Thermal Transport in Aperiodic Superlattices: a Molecular Dynamics and Machine Learning Study, ACS Appl. Mater. Interfaces 2020, 12, 7, 8795-8804. <a href="https://doi.org/10.1021/acsami.9b18084" target="_blank" rel="noopener">https://doi.org/10.1021/acsami.9b18084</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2020">
+        <div class="record-header">
+            <span class="record-number">25.</span>
+            <span class="year-badge">2020</span>
+        </div>
+        <div class="record-body">
+            <p>D Wang, R Dai, X Zhang, L Liu, Y Lu, Y Wang, Y Liao, and Q Nian*, Scalable and controlled creation of nanoholes in graphene by microwave-assisted chemical etching for improved electrochemical properties, Carbon, 2020. <a href="https://doi.org/10.1016/j.carbon.2020.01.076" target="_blank" rel="noopener">https://doi.org/10.1016/j.carbon.2020.01.076</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2020">
+        <div class="record-header">
+            <span class="record-number">24.</span>
+            <span class="year-badge">2020</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Review) T Ma, P Chakraborty, X Guo, L Cao, and Y Wang*, First-principles Modeling of Thermal Transport in Materials: Achievements, Opportunities, and Challenges, International Journal of Thermophysics (2020) 41: 9. <a href="https://doi.org/10.1007/s10765-019-2583-4" target="_blank" rel="noopener">https://doi.org/10.1007/s10765-019-2583-4</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">23.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>S Wu, G Xiong, H Yang, Y Tian, B Gong, H Wan, Y Wang, TS. Fisher, J Yan, K Cen, Z Bo, K Ostrikov, Scalable Production of Integrated Graphene Nanoarchitectures for Ultrafast Solar-Thermal Conversion and Vapor Generation, Cell Matter, 2019 Oct 2;1(4):1017-32. <a href="https://doi.org/10.1016/j.matt.2019.06.010" target="_blank" rel="noopener">https://doi.org/10.1016/j.matt.2019.06.010</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">22.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>W Dai, T Ma, Q Yan, J Gao, X Tan, L Lv, H Hou, Q Wei, J Yu, J Wu, Y Yao, S Du, R Sun, N Jiang*, Y Wang*, J Kong, C Wong, S Maruyama, and C Lin*, Metal-Level Thermally Conductive yet Soft Graphene Thermal Interface Materials, ACS Nano 2019, 13, 10, 11561-11571, <a href="https://doi.org/10.1021/acsnano.9b05163" target="_blank" rel="noopener">https://doi.org/10.1021/acsnano.9b05163</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">21.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>A Zahiri, P Chakraborty, Y Wang, and L Cao*, Strong strain hardening in ultrafast melt-quenched nanocrystalline Cu: The role of fivefold twins, Journal of Applied Physics 126, 075103 (2019), <a href="https://doi.org/10.1063/1.5110287" target="_blank" rel="noopener">https://doi.org/10.1063/1.5110287</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">20.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>Wu, S. H., Xiong, G. P., Yang, H. C., Gong, B. Y., Tian, Y. K., Xu, C. X., Wang, Y., Fisher, T., Yan, J. H., Cen, K. F., Luo, T. F., Tu, X., Bo, Z., K. (Ken) Ostrikov, Multifunctional Solar Waterways: Plasma‐Enabled Self‐Cleaning Nanoarchitectures for Energy‐Efficient Desalination, Advanced Energy Materials 2019, 9, 1901286, <a href="https://doi.org/10.1002/aenm.201901286" target="_blank" rel="noopener">https://doi.org/10.1002/aenm.201901286</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">19.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty, T Ma, L Cao, and Y Wang*, Significantly enhanced convective heat transfer through surface modification in nanochannels, International Journal of Heat and Mass Transfer, Volume 136, June 2019, Pages 702-708, <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2019.03.053" target="_blank" rel="noopener">https://doi.org/10.1016/j.ijheatmasstransfer.2019.03.053</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">18.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>X Li, W Park, Y Wang, Y Chen, and X Ruan*, Reducing Interfacial Thermal Resistance between Metal and Dielectric Materials by a Metal Interlayer, Journal of Applied Physics 125, 045302 (2019), <a href="https://doi.org/10.1063/1.5079428" target="_blank" rel="noopener">https://doi.org/10.1063/1.5079428</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">17.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Review) P Chakraborty, T Ma, A Zahiri, L Cao, and Y Wang*, Carbon-Based Materials for Thermoelectrics, Advances in Condensed Matter Physics, vol. 2018, Article ID 3898479, 29 pages, 2018, <a href="https://doi.org/10.1155/2018/3898479" target="_blank" rel="noopener">https://doi.org/10.1155/2018/3898479</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">16.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty, G Xiong, L Cao*, and Y Wang*, Lattice thermal transport in superhard hexagonal diamond and wurtzite boron nitride: A comparative study with cubic diamond and cubic boron nitride, Carbon, vol. 139, pp. 85-93, (2018), <a href="https://doi.org/10.1016/j.carbon.2018.06.025" target="_blank" rel="noopener">https://doi.org/10.1016/j.carbon.2018.06.025</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">15.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>Z Lu, Y Wang, and X Ruan*, The critical particle size for enhancing thermal conductivity in metal nanoparticle-polymer composites, Journal of Applied Physics, 123 (7), 074302 (2018), <a href="https://doi.org/10.1063/1.5014987" target="_blank" rel="noopener">https://doi.org/10.1063/1.5014987</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2017">
+        <div class="record-header">
+            <span class="record-number">14.</span>
+            <span class="year-badge">2017</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty, L Cao, and Y Wang*, Ultralow lattice thermal conductivity of the random multilayer structure with lattice imperfection, Scientific Reports 7, no. 1 (2017): 8134, <a href="https://doi.org/10.1038/s41598-017-08359-2" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-017-08359-2</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2016">
+        <div class="record-header">
+            <span class="record-number">13.</span>
+            <span class="year-badge">2016</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, Z. Lu, and X. Ruan*, &quot;First principles calculation of lattice thermal conductivity of metals considering phonon-phonon and phonon-electron scattering,&quot; Journal of Applied Physics 119, 225109 (2016). <a href="https://doi.org/10.1063/1.4953366" target="_blank" rel="noopener">https://doi.org/10.1063/1.4953366</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2016">
+        <div class="record-header">
+            <span class="record-number">12.</span>
+            <span class="year-badge">2016</span>
+        </div>
+        <div class="record-body">
+            <p>Z. Lu, Y. Wang, and X. Ruan*, &quot;Metal/dielectric thermal interfacial transport considering cross-interface electron-phonon coupling: Theory, two-temperature molecular dynamics, and thermal circuit,&quot; Physical Review B 93, 064302 (2016). <a href="https://doi.org/10.1103/PhysRevB.93.064302" target="_blank" rel="noopener">https://doi.org/10.1103/PhysRevB.93.064302</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2016">
+        <div class="record-header">
+            <span class="record-number">11.</span>
+            <span class="year-badge">2016</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, Z. Lu, A. Roy, and X. Ruan*, &quot;Effect of interlayer on interfacial thermal transport and hot electron cooling in metal-dielectric systems: an electron-phonon coupling perspective,&quot; Journal of Applied Physics 119, 065103 (2016). <a href="https://doi.org/10.1063/1.4941347" target="_blank" rel="noopener">https://doi.org/10.1063/1.4941347</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2015">
+        <div class="record-header">
+            <span class="record-number">10.</span>
+            <span class="year-badge">2015</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, C. Gu, and X. Ruan*, &quot;Optimization of the random multilayer structure to break the random-alloy limit of thermal conductivity,&quot; Applied Physics Letters, 106, 073104, 2015. <a href="https://doi.org/10.1063/1.4913319" target="_blank" rel="noopener">https://doi.org/10.1063/1.4913319</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">9.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, H. Huang, and X. Ruan*, &quot;Decomposition of coherent and incoherent phonon conduction in superlattices and random multilayers,&quot; Physical Review B 90, 165406, 2014. <a href="https://link.aps.org/doi/10.1103/PhysRevB.90.165406" target="_blank" rel="noopener">https://link.aps.org/doi/10.1103/PhysRevB.90.165406</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">8.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Review) Y. Wang, A. Vallabhaneni, B. Qiu, and X. Ruan*, &quot;Two-Dimensional Thermal Transport in Graphene: A Review of Numerical Modeling Studies,&quot; Nanoscale and Microscale Thermophysical Engineering 18, no. 2 (2014): 155-182. <a href="https://doi.org/10.1080/15567265.2014.891680" target="_blank" rel="noopener">https://doi.org/10.1080/15567265.2014.891680</a></p>
+            <ul class="entry-notes"><li>Editor’s Choice of Ten Significant Articles that Published in 2013 and 2014</li></ul>
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">7.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, A. Vallabhaneni, J. Hu, B. Qiu, Y. Chen, and X. Ruan*, &quot;Phonon Lateral Confinement Enables Thermal Rectification in Asymmetric Single-Material Nanostructures,&quot; Nano Letters, 2014, 14 (2), pp 592–596. <a href="https://doi.org/10.1021/nl403773f" target="_blank" rel="noopener">https://doi.org/10.1021/nl403773f</a></p>
+            <ul class="entry-notes"><li>Media coverage: &quot;Can graphene enable thermal transistors?” IEEE Spectrum; &quot;Research could bring new devices that control heat flow.&quot; ScienceDaily, Purdue News, etc.</li></ul>
+        </div>
+    </li>
+<li class="record-item" data-year="2013">
+        <div class="record-header">
+            <span class="record-number">6.</span>
+            <span class="year-badge">2013</span>
+        </div>
+        <div class="record-body">
+            <p>S. W. Finefrock, Y. Wang (co-first-author with equal contribution), J. B. Ferguson, J. V. Ward, H. Fang, J. E. Pfluger, D. S. Dudis, X. Ruan*, and Y. Wu*, &quot;Measurement of thermal conductivity of PbTe Nanocrystal Coated Glass Fibers by the 3ω method&quot;, Nano Letters, 2013, 13(11), pp 5006-5012. <a href="https://doi.org/10.1021/nl400558u" target="_blank" rel="noopener">https://doi.org/10.1021/nl400558u</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">5.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, B. Qiu, and X. Ruan*, &quot;Edge effect on thermal transport in graphene nanoribbons: A phonon localization mechanism beyond edge roughness scattering,&quot; Applied Physics Letters, 101, 013101, 2012. <a href="https://doi.org/10.1063/1.4732155" target="_blank" rel="noopener">https://doi.org/10.1063/1.4732155</a></p>
+            <ul class="entry-notes"><li>Figure 5 selected as the cover of issue 18(2), 2014 of Nanosc. Microsc. Therm.</li></ul>
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">4.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>B. Qiu, Y. Wang, Q. Zhao, and X. Ruan*, &quot;The effects of diameter and chirality on the thermal transport in free-standing and supported carbon-nanotubes,&quot; Applied Physics Letters 100, 233105, 2012. <a href="https://doi.org/10.1063/1.4725194" target="_blank" rel="noopener">https://doi.org/10.1063/1.4725194</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2053">
+        <div class="record-header">
+            <span class="record-number">3.</span>
+            <span class="year-badge">2053</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, X. Ruan*, and A. Roy, &quot;Two-temperature nonequilibrium molecular dynamics simulation of thermal transport across metal-nonmetal interfaces,&quot; Physical Review B, 85, 205311, 2012. <a href="https://link.aps.org/doi/10.1103/PhysRevB.85.205311" target="_blank" rel="noopener">https://link.aps.org/doi/10.1103/PhysRevB.85.205311</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">2.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, S. Chen, and X. Ruan*, &quot;Tunable thermal rectification in graphene nanoribbons through defect engineering: a molecular dynamics study,&quot; Applied Physics Letters 100, 163101, 2012. <a href="https://doi.org/10.1063/1.3703756" target="_blank" rel="noopener">https://doi.org/10.1063/1.3703756</a></p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">1.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>J. Hu, Y. Wang, A. Vallabhaneni, X. Ruan*, and Y. Chen*, &quot;Nonlinear thermal transport and negative differential thermal conductance in graphene nanoribbons,&quot; Applied Physics Letters, 99, 113101, 2011. <a href="https://doi.org/10.1063/1.3630026" target="_blank" rel="noopener">https://doi.org/10.1063/1.3630026</a></p>
+            <ul class="entry-notes"><li>Highlighted by Nature Nanotechnology 6, 609, 2011</li></ul>
+        </div>
+    </li>
+      </ol>
+    </details>
+    
 
+    <details class="record-section" id="editorial">
+      <summary>
+        <div>
+          <h2>Editorial</h2>
+          <p class="section-subtitle">1 entries</p>
+        </div>
+        <span class="summary-hint">Expand</span>
+      </summary>
+      <ol class="record-list">
+        <li class="record-item" data-year="2017">
+        <div class="record-header">
+            <span class="record-number">1.</span>
+            <span class="year-badge">2017</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, H. Bao, Y. Dong, R. Paul, and H. Deng, &quot;Innovative Nanomaterials for Thermal Applications.&quot; J. Nanomaterials 2017 (2017)</p>
+            
+        </div>
+    </li>
+      </ol>
+    </details>
+    
 
+    <details class="record-section" id="conference-papers">
+      <summary>
+        <div>
+          <h2>Refereed Conference Papers</h2>
+          <p class="section-subtitle">7 entries</p>
+        </div>
+        <span class="summary-hint">Expand</span>
+      </summary>
+      <ol class="record-list">
+        <li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">7.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Belhassani, Lamia, Brandon Hager, Theodore Maranets, John Lee, Yan Wang, Ji Hwan Yoon, Xiaoshan Zhu, Miles Greiner, and Mustafa Hadj-Nacer*. &quot;Development of a Monitoring System for Interrogating the Internal Condition of SNF Canisters.&quot; In Pressure Vessels and Piping Conference, vol. 88513, p. V005T07A019. American Society of Mechanical Engineers, 2024.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2013">
+        <div class="record-header">
+            <span class="record-number">6.</span>
+            <span class="year-badge">2013</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang and X. Ruan, &quot;An Evaluation of Energy Transfer Pathways in Thermal Transport Across Solid/Solid Interfaces,&quot; ASME 2013 Heat Transfer Summer Conference, Minneapolis, Minnesota, USA, July 14–19, 2013</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">5.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang and X. Ruan, &quot;Two-Temperature Molecular Dynamics Simulation of Thermal Transport Across Metal-Nonmetal Interfaces,&quot; ASME MNHMT2012-75262, Atlanta, Georgia, March 2012</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">4.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>B. Qiu, Y. Wang, Q. Zhao, and X. Ruan, &quot;The effects of diameter and chirality in the thermal transport in free-standing and supported carbon-nanotubes,&quot; ASME MNHMT 2012, Atlanta, Georgia, March 2012</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">3.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang and X. Ruan, &quot;Role of edge chirality and isotope doping in thermal transport and thermal rectification in graphene nanoribbons,&quot; ASME paper IMECE2011-63169, Proceedings of the ASME 2011 International Mechanical Engineering Congress &amp; Exposition, Denver, CO, November, 2011</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">2.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, B. Qiu, J. Hu, and X. Ruan, &quot;Necessary conditions for thermal rectification and negative differential thermal conductance in graphene nanoribbons,&quot; 2011 MRS Spring Meeting and Exhibition, San Francisco, April 2011</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">1.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>(INVITED) B. Qiu, Y. Wang and X. Ruan, &quot;Linear and Nonlinear Thermal Transport in Graphene: Molecular Dynamics Simulations,&quot; 2011 MRS Spring Meeting and Exhibit, San Francisco, April 2011. MRS Proceedings 2011 1347: mrss11-1347-bb10-08</p>
+            
+        </div>
+    </li>
+      </ol>
+    </details>
+    
 
-                <div class="loader-overlay">
-                    <div class="loader">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </div>
+    <details class="record-section" id="tools">
+      <summary>
+        <div>
+          <h2>Cloud-Based Research Tools</h2>
+          <p class="section-subtitle">1 entries</p>
+        </div>
+        <span class="summary-hint">Expand</span>
+      </summary>
+      <ol class="record-list">
+        <li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">1.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang, X. Jin, and X. Ruan, &quot;Two-temperature Non-equilibrium Molecular Dynamics Simulator,&quot; <a href="http://nanohub.org/resources/ttmmd," target="_blank" rel="noopener">http://nanohub.org/resources/ttmmd,</a> 2012. (DOI: 10.4231/D3416SZ40)</p>
+            
+        </div>
+    </li>
+      </ol>
+    </details>
+    
 
-                <!-- JS -->
-                <script src="js/jquery.js"></script>
-                <script src="js/main.js"></script>
-                <script src="js/mixitup.js"></script>
-                <script src="js/smoothscroll.js"></script>
-                <script src="js/jquery.nav.js"></script>
-                <script src="js/owl-carousel/owl.carousel.min.js"></script>
-                <script src="https://maps.googleapis.com/maps/api/js"></script>
-                <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-                <script src="js/jquery.counterup.min.js"></script>
-                <script src="js/lightcase.min.js"></script>
-            </body>
-        </html>
+    <details class="record-section" id="talks">
+      <summary>
+        <div>
+          <h2>Seminars and Conference Talks</h2>
+          <p class="section-subtitle">61 entries</p>
+        </div>
+        <span class="summary-hint">Expand</span>
+      </summary>
+      <ol class="record-list">
+        <li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">61.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award) Lotfpour, M., Cui, H., Hagen, N., Nasiri, M., Maranets, T., Wang, Y., Cao, L., Nanograined Multi-Phase Gallium Nitride Through Ultrafast Melt-Quenching: Formation Mechanism and Ultralow Lattice Thermal Conductivity,” 2026 TMS Annual Meeting &amp; Exhibition, San Diego, CA, March 15-19, 2026</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">60.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>Lotfpour, M., Cui, H., Wang, Y., Cao, L., “Atomistic Insights Into the Graphite-to-Diamond Phase Transformation via Deep Neural Network Potential Molecular Dynamics,” 2026 TMS Annual Meeting &amp; Exhibition, San Diego, CA, March 15-19, 2026</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">59.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>Wang, C.*, Cui, H., Wang, Y. and Cao, L., “Ionic Transport Properties and Phase Stability of Solid Electrolyte Material Li7La3Zr2O12: A Deep-Neural-Network Molecular Dynamics Investigation,” 2026 TMS Annual Meeting &amp; Exhibition, San Diego, CA, March 15-19, 2026</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2026">
+        <div class="record-header">
+            <span class="record-number">58.</span>
+            <span class="year-badge">2026</span>
+        </div>
+        <div class="record-body">
+            <p>(INVITED) Yan Wang*, &quot;Application of deep-neural-network molecular dynamics to elucidate the atomistic mechanisms of laser processing of two-dimensional materials,&quot; International Conference on Plasticity, Damage, and Fracture, Geelong, Victoria, Australia, January 2026</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">57.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Wang, C.*, Cui, H., Wang, Y. and Cao, L., “Ionic Transport Properties and Phase Stability of Solid Electrolyte Material Li7la3zr2o12: A Deep-Neural-Network Molecular Dynamics Investigation” – Oral Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 17-20, 2025, Memphis, TN.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">56.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, Wang, C., Wang, Y., and Cao, L., &quot;Lattice Thermal Transport in Garnet-Type Solid Electrolytes: A Deep Learning Molecular Dynamics Study of Li₇La₃Zr₂O₁₂&quot; – Oral Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), Nov 16-20, 2025, Memphis, TN.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">55.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Lotfpour, M., Cui, H., Hagen, N., Nasiri, M., Maranets, T., Wang, Y., Cao, L., &quot;Superlattice-like multi-phase gallium nitride nanostructure through ultrafast quenching&quot; – Oral Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 16-20, 2025, Memphis, TN.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">54.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Lotfpour, M., Cui, H., Wang, Y., Cao, L., &quot;Atomistic insights into the graphite-to-diamond phase transformation via deep neural network potential molecular dynamics&quot; – Oral Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 16-20, 2025, Memphis, TN.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">53.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, T., &amp; Wang, Y. (2025, March 10). Role of Interface Mixing on Coherent Heat Conduction in Periodic and Aperiodic Superlattices [Poster presentation]. 2025 Nevada NASA Statewide Meeting Poster Session, Reno, NV.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">52.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, T.*, Cui, H., and Wang, Y., &quot;Delineation of Incoherent and Coherent Phonon Contributions to Thermal Transport in Semiconductor Superlattices&quot; – Oral Presentation, Materials Research Society (MRS) Fall Meeting &amp; Exhibit, December 1-6, 2024, Boston, MA</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">51.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, and Wang, Y., &quot;Elucidating Atomistic Mechanisms in Thermal Processing of Graphene Through Deep Learning Molecular Dynamics&quot; – Oral Presentation, Materials Research Society (MRS) Fall Meeting &amp; Exhibit, December 1–6, 2024, Boston, MA.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">50.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, Maranets T., and Wang, Y., &quot;Spectral Phonon Analysis of Coherent and Incoherent Phonon Transport in Nanomeshes of 2D and 3D Materials&quot; - Oral Presentation, Materials Research Society (MRS) Fall Meeting &amp; Exhibit, December 1–6, 2024, Boston, MA.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">49.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, and Wang, Y., &quot;Enhanced Heat Transfer Between Graphene and Water by Basal-Plane Oxidation— A One-Order-of-Magnitude Improvement&quot; - Oral Presentation, Materials Research Society (MRS) Fall Meeting &amp; Exhibit, December 1–6, 2024, Boston, MA.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">48.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, T.*, and Wang, Y., &quot;Coherent and Incoherent Phonon Wave Transport in Superlattices&quot; – Oral Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 17-21, 2024, Portland, OR</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">47.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, T.,* and Wang, Y., &quot;Elucidating Phonon Coherence Behaviors and Thermal Transport in Superlattices by Wave-packet Simulation&quot; – Poster Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 17-21, 2024, Portland, OR</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">46.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, and Wang, Y., &quot;Exploring Lattice Thermal Transport in Methane Hydrates: Insights From Deep Neural Network-Enhanced Interatomic Potentials&quot; - Technical Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">45.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, and Wang, Y., &quot;Atomistic Modeling of Thermally-Driven Chemical Processes in Laser Processing of Graphene and Its Oxides&quot; - Technical Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">44.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets. T.*, and Wang, Y., &quot;Coherent and Incoherent Phonon Wave Transport in Superlattices&quot; Technical Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">43.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Nasiri M., Wang, Y., &quot;Enhancing Convective Heat Transfer on Graphene Nanochannels Using Functional Groups&quot; - Technical Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">42.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Mozafarifard M.*, Wang, Y., &quot;Lattice Heat Backflow Dynamics in Bi-Metallic Nanolayers Subjected to Ultrafast Laser Heating&quot; - Technical Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">41.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Presentation Award) Mozafarifard, M.*, Nasiri, M., Wang, Y., &quot;The Impact of Phonon Nonequilibrium on the Apparent Thermal Conductivity of Nonmetals Under Periodic Heating Conditions&quot; - Technical Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">40.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>(INVITED) Yan Wang*, &quot;Harnessing Wave and Particle Properties of Phonons for Enhanced Control over Lattice Thermal Transport,&quot; 22nd Symposium on Thermophysical Properties, Boulder, CO, USA, June, 2024</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">39.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Theodore Maranets and Yan Wang*, &quot;Direct Atomistic Wave-packet Simulation of Coherent Phonon Transport in Superlattice Structures,&quot; 22nd Symposium on Thermophysical Properties, Boulder, CO, USA, June, 2024</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">38.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Haoran Cui, Iyyappa Rajan Panneerselvam, Theodore Maranets, and Yan Wang*, &quot;Exploring Lattice Thermal Transport in Methane Hydrates: Insights from Deep Neural Network-Enhanced Interatomic Potentials,&quot; 22nd Symposium on Thermophysical Properties, Boulder, CO, USA, June, 2024</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">37.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Presentation Award) Theodore Maranets*, Haoran Cui, and Yan Wang, &quot;Thermal Transport in Embedded Nanoparticle Composites: A Molecular Dynamics Study of the Optimized Size Distribution,&quot; ASME IMECE 2023, New Orleans, Nov 2023.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">36.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>Theodore Maranets* and Yan Wang, &quot;Atomistic investigation of phonon transport through nanoparticles,&quot; APS March Meeting 2023 - Las Vegas, NV, March 9, 2023.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">35.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>I. Panneerselvam*, M. Lotfpour, J. Ombogo, Y. Wang and L. Cao, Investigation of Transformation-Mediated Nano-Twin Nucleation Mechanisms in Magnesium Using Deep Neural Network Interatomic Potentials, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3, 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">34.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>I. Panneerselvam* and Y. Wang, Formation Mechanism of Holey Graphene/graphene Oxide in Laser Heated Graphene Oxide-Hydrogen Peroxide Solution from Deep Neural Network Interatomic Potential, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3, 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">33.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>I. Panneerselvam*, H. Cui, T. Ma and Y. Wang, Lattice Thermal Transport Properties of Methane Hydrates from Deep Neural Network Interatomic Potentials, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3, 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">32.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>M. Mozafarifard*, Y. Wang, Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">31.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>H Cui*, T Ma and Y Wang, Comprehensive Investigation of Phonon Scattering and Phonon Coherence in Nanomesh Structures, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">30.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>T Maranets* and Y Wang, Molecular dynamics analysis of mode-resolved phonon scattering by embedded nanoparticles, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct 31-Nov 3, 2022</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">29.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Talk) Y Wang*, Engineering Phonons and Electrons Toward Improved Energy Efficiency, Thermal Management, and Laser Manufacturing, University of Houston, April, 2022</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2021">
+        <div class="record-header">
+            <span class="record-number">28.</span>
+            <span class="year-badge">2021</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Talk) Y Wang*, The Complex Role of Interfaces in Determining Phonon Transport in Two-Dimensional Materials, 2021 MRS Fall Meeting and Exhibit, Boston, Massachusetts.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2021">
+        <div class="record-header">
+            <span class="record-number">27.</span>
+            <span class="year-badge">2021</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Talk) Y Wang*, Engineering Phonon Transport at Multiple Scales: Phonon Coherence and Localization, 21st Symposium on Thermophysical Properties, Boulder, CO, USA, June, 2021</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">26.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>(Invited Panel Talk) Y Wang*, Reduced Phonon Transport in Disordered Materials: Scattering or Localization? The 2nd Pacific Rim Thermal Engineering Conference (PRTEC), Maui, Hawaii, Dec 13-17, 2019</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">25.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>Y Wang*, Coherent and Incoherent Phonon Transport in Layered Structures, The 2nd Pacific Rim Thermal Engineering Conference (PRTEC), Maui, Hawaii, Dec 13-17, 2019</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2020">
+        <div class="record-header">
+            <span class="record-number">24.</span>
+            <span class="year-badge">2020</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty* and Y Wang, Physics-guided Machine-Learning Design of Aperiodic Superlattices with Maximum Localization of Coherent Phonons, 2020 TMS Annual Meeting &amp; Exhibition, San Diego, CA, February 23-27, 2020</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">23.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty*, T Ma, L Cao and Y Wang, Optimization of Random Multilayer Structure through Physics-informed Machine Learning, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Salt Lake City, Utah, Nov 11-14, 2019</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">22.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>T Ma*, L Cao and Y Wang, The Effect of Dimensionality on Phonon Localization, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Salt Lake City, Utah, Nov 11-14, 2019</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">21.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty*, L Cao and Y Wang, Probing the lower limit of lattice thermal transport in one-dimensional phononic crystals, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">20.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty, T Ma*, L Cao and Y Wang, Enhanced heat convection in nanochannels through surface engineering, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">19.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty*, T Ma, L Cao and Y Wang, Lattice thermal transport in superhard hexagonal diamond and wurtzite boron nitride under high temperature and/or high pressure, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">18.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>T Ma* and Y Wang, Giant reduction of thermal transport in polyvinylidene fluoride under tensile strains, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Pittsburgh, Philadelphia, Nov 9-15, 2018</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2018">
+        <div class="record-header">
+            <span class="record-number">17.</span>
+            <span class="year-badge">2018</span>
+        </div>
+        <div class="record-body">
+            <p>(Department Seminar Series) Y Wang*, Nanoengineering of Materials for Improved Energy Efficiency and Thermal Management, Department of Mechanical Engineering, University of Nevada, Las Vegas, Apr 19, 2018</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2017">
+        <div class="record-header">
+            <span class="record-number">16.</span>
+            <span class="year-badge">2017</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty* and Y Wang, Enhancing convective heat transfer in nanochannels through surface modification, ASME 2017 International Mechanical Engineering Congress &amp; Exposition, Tampa, Florida</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2017">
+        <div class="record-header">
+            <span class="record-number">15.</span>
+            <span class="year-badge">2017</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty* and Y Wang, Surface engineering for enhanced heat convection in nanochannels, ASME 2017 International Mechanical Engineering Congress &amp; Exposition, Tampa, Florida</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2017">
+        <div class="record-header">
+            <span class="record-number">14.</span>
+            <span class="year-badge">2017</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty*, L Cao, and Y Wang, Hierarchical suppression of coherent and incoherent phonon transport in multilayered structures, ASME 2017 International Mechanical Engineering Congress &amp; Exposition, Tampa, Florida</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2017">
+        <div class="record-header">
+            <span class="record-number">13.</span>
+            <span class="year-badge">2017</span>
+        </div>
+        <div class="record-body">
+            <p>P Chakraborty and Y Wang*, Understanding and Manipulating Coherent and Incoherent Phonon Transport in Multilayered Structures, 2017 MRS Spring Meeting &amp; Exhibit, April 17-21, 2017, Phoenix, Arizona</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2015">
+        <div class="record-header">
+            <span class="record-number">12.</span>
+            <span class="year-badge">2015</span>
+        </div>
+        <div class="record-body">
+            <p>Y Wang and X Ruan*, Monte Carlo enabled spectral Boltzmann transport simulation for electron-phonon coupled thermal transport across metal-dielectric interfaces, ASME 2015 International Mechanical Engineering Congress &amp; Exposition, Houston, Texas</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2015">
+        <div class="record-header">
+            <span class="record-number">11.</span>
+            <span class="year-badge">2015</span>
+        </div>
+        <div class="record-body">
+            <p>Y Wang, Z Lu, and X Ruan*, First-principles calculation of the electronic and lattice thermal conductivity of metals, ASME 2015 International Mechanical Engineering Congress &amp; Exposition, Houston, Texas</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2015">
+        <div class="record-header">
+            <span class="record-number">10.</span>
+            <span class="year-badge">2015</span>
+        </div>
+        <div class="record-body">
+            <p>Z. Lu*, Y. Wang, and X. Ruan, “Two-temperature Molecular Dynamics Simulation with Non-local and Regional Electron-phonon Coupling,” ASME 2015 International Mechanical Engineering Congress &amp; Exposition, Houston, Texas</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">9.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang*, H. Huang, and X. Ruan, &quot;Decomposition of coherent and incoherent phonon conduction in superlattice and random multilayers,&quot; ASME 2014 International Mechanical Engineering Congress &amp; Exposition, Montreal, Canada</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">8.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang*, T. Feng, J. Shi, Z. Lu, and X. Ruan, &quot;Mode-resolved Boltzmann transport simulation of electron-phonon coupled thermal transport in metal-dielectric hetero-junctions,&quot; ASME 2014 International Mechanical Engineering Congress &amp; Exposition, Montreal, Canada</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">7.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang*, R. Paul, T. Fisher, and X. Ruan, &quot;Thermal transport in single-layer graphene doped with h-BN islands,&quot; ASME 2014 International Mechanical Engineering Congress &amp; Exposition, Montreal, Canada</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2014">
+        <div class="record-header">
+            <span class="record-number">6.</span>
+            <span class="year-badge">2014</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang* and X. Ruan, &quot;Phonon transport and electron-phonon coupled thermal transport in nanostructures,&quot; Nano TE/thermal Seminars, Purdue Univ., July 22, 2014</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2013">
+        <div class="record-header">
+            <span class="record-number">5.</span>
+            <span class="year-badge">2013</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang* and X. Ruan,  &quot;An Evaluation of Energy Transfer Pathways in Thermal Transport Across Solid/Solid Interfaces,&quot; 2013 MRS Spring Meeting &amp; Exhibit, April 1-5, 2013, San Francisco, California</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">4.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang* and X. Ruan, &quot;Two-Temperature Molecular Dynamics Simulation of Thermal Transport Across Metal-Nonmetal Interfaces,&quot; ASME Micro/Nanoscale Heat &amp; Mass Transfer International Conference Atlanta, Georgia, March 2012</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">3.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>B. Qiu*, Y. Wang, Q. Zhao, and X. Ruan, &quot;The effects of diameter and chirality in the thermal transport in free-standing and supported carbon-nanotubes,&quot; ASME Micro/Nanoscale Heat &amp; Mass Transfer International Conference Atlanta, Georgia, March 2012</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">2.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang* and X. Ruan, &quot;Role of edge chirality and isotope doping in thermal transport and thermal rectification in graphene nanoribbons,&quot; ASME 2011 International Mechanical Engineering Congress &amp; Exposition, Denver, CO, November 2011</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">1.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>B. Qiu*, Y. Wang and X. Ruan, &quot;Linear and Nonlinear Thermal Transport in Graphene: Molecular Dynamics Simulations,&quot; 2011 MRS Spring Meeting &amp; Exhibit, San Francisco, April 2011</p>
+            
+        </div>
+    </li>
+      </ol>
+    </details>
+    
+
+    <details class="record-section" id="posters">
+      <summary>
+        <div>
+          <h2>Selected Poster Presentations</h2>
+          <p class="section-subtitle">19 entries</p>
+        </div>
+        <span class="summary-hint">Expand</span>
+      </summary>
+      <ol class="record-list">
+        <li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">19.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Wang, C.*, Cui, H., Wang, Y. and Cao, L., “Ionic Transport Properties and Phase Stability of Solid Electrolyte Material Li7la3zr2o12: A Deep-Neural-Network Molecular Dynamics Investigation” – Poster Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 17-20, 2025, Memphis, TN</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2025">
+        <div class="record-header">
+            <span class="record-number">18.</span>
+            <span class="year-badge">2025</span>
+        </div>
+        <div class="record-body">
+            <p>Cui, H.*, Crosby, J., Lotfpour, M., Cao, L., and Wang, Y., &quot;Pressure-Enhanced Lattice Thermal Transport in Graphite: Insights from Deep Neural Network Molecular Dynamics&quot; – Poster Presentation, International Mechanical Engineering Convention &amp; Exposition (IMECE), November 16-20, 2025, Memphis, TN.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">17.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award, 2nd place) Cui, H.*, and Wang, Y., &quot;Coherent and Incoherent Phonon Heat Conduction in Silicon Porous Thin Film&quot; - Poster Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">16.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets. T.*, and Wang, Y., &quot;Elucidating Phonon Coherence Behaviors and Thermal Transport in Superlattices by Wave-Packet Simulation&quot; Poster Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">15.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award, 1st place) Nasiri M.*, Wang, Y., &quot;Enhancing Convective Heat Transfer on Graphene Nanochannels Using Functional Groups&quot; - Poster Presentation, International Mechanical Engineering Congress and Exposition (IMECE) 2024, November 17– 21, 2024, Portland, OR.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2024">
+        <div class="record-header">
+            <span class="record-number">14.</span>
+            <span class="year-badge">2024</span>
+        </div>
+        <div class="record-body">
+            <p>Theodore Maranets and Yan Wang*, &quot; Lattice Thermal Conductivity of Embedded Nanoparticle Composites: The Role of Particle Size Distribution,&quot; 22nd Symposium on Thermophysical Properties, Boulder, CO, USA, June, 2024</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">13.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award) Theodore Maranets, Haoran Cui, and Yan Wang, &quot;Thermal Transport in Embedded Nanoparticle Composites: A Molecular Dynamics Study of the Optimized Size Distribution,&quot; ASME IMECE 2023, New Orleans, Nov 2023</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2023">
+        <div class="record-header">
+            <span class="record-number">12.</span>
+            <span class="year-badge">2023</span>
+        </div>
+        <div class="record-body">
+            <p>Theodore Maranets* and Yan Wang, &quot;Atomistic investigation of phonon transport through nanoparticles,&quot; APS March Meeting 2023 - Las Vegas, NV, March 9, 2023.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">11.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>Maranets, T., Wang, Y., Hadj-Nacer, M., Greiner, M., “Analyzing the effect of nanoparticles on thermal transport for improved thermoelectric performance,” NV NASA Programs Virtual Poster Competition, 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">10.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award, 1st place) T Maranets* and Y Wang, Molecular dynamics analysis of mode-resolved phonon scattering by embedded nanoparticles, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct 31-Nov 3, 2022</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">9.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award, 3rd placve) H Cui* and Y Wang, Comprehensive Investigation of Phonon Scattering and Phonon Coherence in Nanomesh Structures, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct 31-Nov 3, 2022</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">8.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>H Cui*, T Ma and Y Wang, Engineering Lattice Thermal Transport in Nanomesh Metastructures, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2022">
+        <div class="record-header">
+            <span class="record-number">7.</span>
+            <span class="year-badge">2022</span>
+        </div>
+        <div class="record-body">
+            <p>M. Mozafarifard*, Y. Wang, Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport, ASME’s International Mechanical Engineering Congress and Exposition (IMECE), Columbus, Ohio, Oct. 31 to Nov. 3 2022.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">6.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award) P Chakraborty* and Y Wang, Optimization of Random Multilayer Structure through Physics-informed Machine Learning,&quot; ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Salt Lake City, Utah, Nov 11-14, 2019.</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">5.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award) T Ma* and Yan Wang, The Effect of Dimensionality on Phonon Localization, ASME&#x27;s International Mechanical Engineering Congress and Exposition (IMECE), Salt Lake City, Utah, Nov 11-14, 2019</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2019">
+        <div class="record-header">
+            <span class="record-number">4.</span>
+            <span class="year-badge">2019</span>
+        </div>
+        <div class="record-body">
+            <p>(Best Poster Award: 2nd place) P Chakraborty*, X Guo, T Ma, and Y Wang, “Random Multilayer for Thermoelectric Applications: a Molecular Dynamics and Machine Learning Study,” GSA 2019 Fall Poster Symposium Award, University of Nevada, Reno, Oct 22, 2019</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2015">
+        <div class="record-header">
+            <span class="record-number">3.</span>
+            <span class="year-badge">2015</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang* and X. Ruan, “Coherent phonon transport in multilayered structures,” Hawkins Memorial Lecture Poster Session, West Lafayette, IN, October 1, 2015</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2012">
+        <div class="record-header">
+            <span class="record-number">2.</span>
+            <span class="year-badge">2012</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang*, B. Qiu, and X. Ruan, &quot;Negative differential thermal conductance in graphene nanoribbons,&quot; US-India Nanomaterials for Energy Symposium, West Lafayette, IN, April 2012</p>
+            
+        </div>
+    </li>
+<li class="record-item" data-year="2011">
+        <div class="record-header">
+            <span class="record-number">1.</span>
+            <span class="year-badge">2011</span>
+        </div>
+        <div class="record-body">
+            <p>Y. Wang* and X. Ruan, &quot;Two-temperature molecular dynamics simulations of thermal transport across CNT-metal interfaces,&quot; AFOSR Thermal Sciences Annual Grantees Meeting, Washington DC, September 26-28, 2011</p>
+            
+        </div>
+    </li>
+      </ol>
+    </details>
+    
+        <p class="footer-note">Page refreshed from the latest publication and presentation list supplied in the attached Word document.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const searchInput = document.getElementById('record-search');
+    const sections = Array.from(document.querySelectorAll('.record-section'));
+    const items = Array.from(document.querySelectorAll('.record-item'));
+
+    function applySearch() {
+      const q = searchInput.value.trim().toLowerCase();
+      items.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        const match = !q || text.includes(q);
+        item.classList.toggle('hidden-by-search', !match);
+      });
+      sections.forEach(section => {
+        const visible = section.querySelectorAll('.record-item:not(.hidden-by-search)').length;
+        section.classList.toggle('hidden-by-search', visible === 0);
+        if (q && visible > 0) section.open = true;
+      });
+    }
+
+    searchInput.addEventListener('input', applySearch);
+  </script>
+</body>
+</html>
