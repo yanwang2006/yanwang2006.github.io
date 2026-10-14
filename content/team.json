@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Dr. Yan Wang",
+    "role": "Associate Professor",
+    "image": "images/team/yanwang.jpg",
+    "bio": "Professor Yan Wang joined the University of Nevada, Reno, as an assistant professor in 2016 and was promoted to associate professor with tenure in 2022. He received his Ph.D. in Mechanical Engineering from Purdue University, West Lafayette, in 2016. Prior to his studies at Purdue, he earned a B.Sc. degree in Measurement and Control from the Department of Precision Instruments at Tsinghua University, Beijing, in 2010, and a bachelor's degree in Economics from Tsinghua University in the same year. Dr. Wang has served as a reviewer for over 40 journals, including ACS Nano, Advanced Materials, the International Journal of Extreme Manufacturing, the International Journal of Heat and Mass Transfer, Nano Letters, Science Advances, and Physical Review (B, Letters, and X). He has organized multiple topics and sessions for ASME IMECE conferences and the Symposium of Thermophysical Properties. He has received numerous awards, including the prestigious NSF CAREER Award (2020), the ACS PRF Doctoral New Investigator Award (2019), the College of Engineering Outstanding Graduate Student Research Award (Purdue, 2015), the Bilsland Dissertation Fellowship (Purdue, 2014-2015), and the Frederick N. Andrews Fellowship (Purdue, 2010-2012).",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=AMlEppAAAAAJ&hl=en"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:yanwang@unr.edu"
+      }
+    ]
+  },
+  {
+    "name": "Theodore Maranets",
+    "role": "PhD Student",
+    "image": "images/team/teddy.jpg",
+    "bio": "Mr. Theodore \"Teddy\" Maranets, a dedicated researcher pursuing a Ph.D. in Mechanical Engineering, joined our group in fall 2021. He completed his bachelor's degree in Physics at Northeastern University, Boston, MA, USA, in 2021. In his free time, he enjoys swimming and reading science fiction and fantasy novels. Honors & Awards: Best Presentation Award, HTD K-9 Session, ASME IMECE 2023; Best Poster Award (3rd place), Micro-Nano Forum, ASME IMECE 2023; Best Poster Award (1st place), ME Graduate Student Poster Contest, University of Nevada, Reno; Best Poster Award (1st place), Micro-Nano Forum, ASME IMECE 2022.",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=1Eyky6wAAAAJ&view_op=list_works&sortby=pubdate"
+      }
+    ]
+  },
+  {
+    "name": "Milad Mozarfarifard",
+    "role": "PhD Student",
+    "image": "images/team/miladm.jpg",
+    "bio": "Mr. Milad Mozafarifard joined our research team in fall 2021, focusing on thermal transport in materials under laser irradiation. He earned his B.Sc. in Mechanical Engineering from IAU and his M.Sc. in Energy Conversion from SCU in 2011 and 2017, respectively. Prior to joining us, he worked as an independent researcher, publishing in peer-reviewed journals like IJHMT, ICHMT, SE, and HMT. He is also a reviewer for International Communications in Heat and Mass Transfer and the Journal of Mechanical Engineering. Milad won the 2nd-place award in the ME Graduate Student Poster Contest in both 2022 and 2023 at the University of Nevada, Reno.",
+    "links": [
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=66rij2QAAAAJ&hl=en"
+      }
+    ]
+  },
+  {
+    "name": "Haoran Cui",
+    "role": "PhD Student",
+    "image": "images/team/haoran.jpg",
+    "bio": "Mr. Haoran Cui joined our group in the fall of 2021 and is currently pursuing his Ph.D. in Mechanical Engineering. He completed his B.Eng in Project Cost from Shandong Jianzhu University, Jinan, China in 2017, and subsequently earned his M.Eng in Mechanics from Beijing University of Technology (BJUT) in 2020. Apart from his academic pursuits, he enjoys playing basketball and has a passion for music.",
+    "links": []
+  },
+  {
+    "name": "Milad Nasiri",
+    "role": "PhD Student",
+    "image": "images/team/miladn.jpeg",
+    "bio": "Mr. Milad Nasiri is now pursuing his Ph.D. degree in the department. He received his M.Sc. in Mechanical Engineering (Thermofluids and Renewable Energy) from the Amirkabir University of Technology, Tehran, Iran in 2019. He also earned a B.Sc. degree in Mechanical Engineering-Manufacturing from Semnan University, Semnan, Iran in 2015. He likes playing football, traveling, hiking, watching movies, and listening to music while having free time.",
+    "links": []
+  },
+  {
+    "name": "John Crosby",
+    "role": "Master’s Student",
+    "image": "images/team/john.jpg",
+    "bio": "Mr. John Crosby is currently a master's student in our group. He joined our group as an undergraduate researcher in Spring 2023. He aims to explore thermal conductivity in multilayer graphene and graphite to improve thermal management for instruments used in NASA’s space missions. After completing his undergraduate degree, John hopes to pursue a graduate degree in mechanical engineering. In his free time, he enjoys hiking, swimming, and weightlifting.",
+    "links": []
+  },
+  {
+    "name": "Evan Doe",
+    "role": "Undergrad Researcher",
+    "image": "images/team/evan.jpg",
+    "bio": "Mr. Evan Wallace Doe is a senior undergraduate researcher who joined our team in the spring of 2024. He is currently working towards his undergraduate degree in mechanical engineering. He is working on exploring thermal transport in metamaterials with the support of the Nevada NASA Space Grant Consortium Undergraduate Scholarship. Evan Wallace has plans to pursue a graduate degree in mechanical engineering after completing his undergraduate studies. In his leisure time, he enjoys activities such as mountain biking, snowboard mountaineering, camping, and traveling.",
+    "links": []
+  }
+]

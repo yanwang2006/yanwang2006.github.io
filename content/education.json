@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Heat Transfer Classes",
+    "image": "images/education/me314.jpg",
+    "description": "ME314 introduces students to the various processes of heat transfer. ME414/614 covers classical approaches to solving complex heat transfer problems. ME714 delves into advanced theories and modeling techniques for addressing heat transfer challenges.",
+    "category": "Teaching",
+    "courses": [
+      "ME 314",
+      "ME 414 / 614",
+      "ME 714"
+    ]
+  },
+  {
+    "title": "K-12 Outreach",
+    "image": "images/education/engineersday.png",
+    "description": "We are committed to educating and motivating K-12 students to pursue higher education and careers in STEM fields. We offer lab tours and science demonstrations during events such as Engineer's Day, Nevada Bound, and other programs for local K-12 students.",
+    "category": "Community engagement"
+  },
+  {
+    "title": "Capstone Projects",
+    "image": "images/education/capstone2017_flat.jpg",
+    "description": "Dr. Wang has mentored several Capstone design groups to design thermal energy conversion devices through science and engineering principles. Past projects include solar-thermal converters, solar-thermoelectric converters, and thermal interface materials.",
+    "category": "Senior design"
+  },
+  {
+    "title": "Undergrad Research",
+    "image": "images/education/capstone2017_flat.jpg",
+    "description": "We are enthusiastic about providing research opportunities to undergraduate students who are curious about graduate-level research, considering graduate school, or interested in thermal, fluid, and energy sciences.",
+    "category": "Research experience"
+  }
+]
