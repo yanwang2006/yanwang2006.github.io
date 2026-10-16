@@ -6,7 +6,10 @@
     "citation_html": "\n            <p>Ryan Coulter, Haoran Cui, Fazlay Rubbi, Lily Raymond, Yiliang Liao*, Yan Wang*, Yifei Jin*, “Energy Field-Assisted Additive Manufacturing of Engineering Thermoplastics,” Advanced Engineering Materials 2026, 0, e202502252.</p>\n            \n        ",
     "id": "publication-001",
     "title": "Energy Field-Assisted Additive Manufacturing of Engineering Thermoplastics",
-    "featured": true
+    "featured": true,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:FiDNX6EVdGUC",
+    "scholar_title": "Energy Field‐Assisted Additive Manufacturing of Engineering Thermoplastics",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
@@ -15,7 +18,10 @@
     "citation_html": "\n            <p>(Invited Review; Feature Article) Cui, Haoran, Theodore Maranets, Yan Wang*, Yifei Jin*, and Lei Cao*. &quot;Lattice Thermal Transport in Polymers: Atomistic Insights, Modeling Advances, and Design Perspectives.&quot; Crystals 16, no. 4 (2026): 242.</p>\n            \n        ",
     "id": "publication-002",
     "title": "Lattice Thermal Transport in Polymers: Atomistic Insights, Modeling Advances, and Design Perspectives",
-    "featured": true
+    "featured": true,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:HhcuHIWmDEUC",
+    "scholar_title": "Lattice Thermal Transport in Polymers: Atomistic Insights, Modeling Advances, and Design Perspectives",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
@@ -24,7 +30,10 @@
     "citation_html": "\n            <p>Nasiri, Milad, Haoran Cui, Pranay Chakraborty, and Yan Wang*. &quot;Deep-neural-network molecular dynamics investigation of heat convection of water in graphene oxide nanochannel.&quot; International Communications in Heat and Mass Transfer 172 (2026): 110267.</p>\n            \n        ",
     "id": "publication-003",
     "title": "Deep-neural-network molecular dynamics investigation of heat convection of water in graphene oxide nanochannel",
-    "featured": true
+    "featured": true,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:uVUOdF_882EC",
+    "scholar_title": "Deep-neural-network molecular dynamics investigation of heat convection of water in graphene oxide nanochannel",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
@@ -33,7 +42,82 @@
     "citation_html": "\n            <p>Lotfpour, Mehrab, Haoran Cui, Nolan Hagen, Milad Nasiri, Theodore Maranets, Yan Wang*, and Lei Cao*. &quot;Ultrafast quenching leads to nanograined gallium nitride containing superlattice-like multi-phase domains.&quot; Computational Materials Science 262 (2026): 114399.</p>\n            \n        ",
     "id": "publication-004",
     "title": "Ultrafast quenching leads to nanograined gallium nitride containing superlattice-like multi-phase domains",
-    "featured": false
+    "featured": false,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:1DsIQWDZLl8C",
+    "scholar_title": "Ultrafast quenching leads to nanograined gallium nitride containing superlattice-like multi-phase domains",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-161",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2026",
+    "title": "Bayesian optimization-enabled efficient embedded ink writing of human tissue analogs",
+    "citation_html": "<p>Shanti Quinto, Haoran Cui, Lily Raymond, Eric Shen, Hopson Tan, Liam Bond, Yue Yuan, Bin Duan, Yan Wang, Guangrui Chai, Yifei Jin. “Bayesian optimization-enabled efficient embedded ink writing of human tissue analogs.” <em>Bio-Design and Manufacturing</em>, 1-14. 2026. <a href=\"https://link.springer.com/article/10.1631/bdm.2600114\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:oi2SiIJ9l4AC",
+    "scholar_title": "Bayesian optimization-enabled efficient embedded ink writing of human tissue analogs",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-162",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2026",
+    "title": "Characterization of Lithium-Ion Battery Fire Emissions—Part 3: Gas Emissions",
+    "citation_html": "<p>Matthew Claassen, Bjoern Bingham, Joseph Ammatelli, Judith C Chow, John G Watson, Yan Wang, Xiaoliang Wang. “Characterization of Lithium-Ion Battery Fire Emissions—Part 3: Gas Emissions.” <em>Batteries</em> 12 (6), 193. 2026. <a href=\"https://www.mdpi.com/2313-0105/12/6/193\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:-nhnvRiOwuoC",
+    "scholar_title": "Characterization of Lithium-Ion Battery Fire Emissions—Part 3: Gas Emissions",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-164",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2026",
+    "title": "Frequency-dependent phonon thermal transport and mode nonequilibrium in periodically heated non-metallic media",
+    "citation_html": "<p>Milad Mozafarifard, Yan Wang. “Frequency-dependent phonon thermal transport and mode nonequilibrium in periodically heated non-metallic media.” <em>International Journal of Thermal Sciences</em> 229, 111090. 2026. <a href=\"https://www.sciencedirect.com/science/article/pii/S1290072926004345\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:w1MjKQ0l0TYC",
+    "scholar_title": "Frequency-dependent phonon thermal transport and mode nonequilibrium in periodically heated non-metallic media",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-165",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2026",
+    "title": "Competition between Anharmonic Dephasing and Phonon Anderson Localization in Aperiodic Superlattices",
+    "citation_html": "<p>Yan Wang. “Competition between Anharmonic Dephasing and Phonon Anderson Localization in Aperiodic Superlattices.” <em>Physics Letters A</em>, 132240. 2026. <a href=\"https://www.sciencedirect.com/science/article/pii/S0375960126009126\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:WAzi4Gm8nLoC",
+    "scholar_title": "Competition between Anharmonic Dephasing and Phonon Anderson Localization in Aperiodic Superlattices",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-167",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2026",
+    "title": "Enhanced graphene-water thermal transport via edge functionalization without compromising in-plane thermal conductivity",
+    "citation_html": "<p>John Crosby, Haoran Cui, Mehrab Lotfpour, Yan Wang, Lei Cao. “Enhanced graphene-water thermal transport via edge functionalization without compromising in-plane thermal conductivity.” <em>2D Materials</em> 13 (3), 035005. 2026. <a href=\"https://iopscience.iop.org/article/10.1088/2053-1583/ae780d/meta\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:3bvyWxjaHKcC",
+    "scholar_title": "Enhanced graphene-water thermal transport via edge functionalization without compromising in-plane thermal conductivity",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-168",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2026",
+    "title": "Tunable heat accumulation and lattice heat backflow in bimetallic layers under femtosecond pulse-train laser irradiation",
+    "citation_html": "<p>Milad Mozafarifard, Yan Wang. “Tunable heat accumulation and lattice heat backflow in bimetallic layers under femtosecond pulse-train laser irradiation.” <em>International Communications in Heat and Mass Transfer</em> 177, 111509. 2026. <a href=\"https://www.sciencedirect.com/science/article/pii/S0735193326010304\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:w0F2JDEymm0C",
+    "scholar_title": "Tunable heat accumulation and lattice heat backflow in bimetallic layers under femtosecond pulse-train laser irradiation",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
@@ -42,7 +126,10 @@
     "citation_html": "\n            <p>Mitchell, Kellen, Aidan Shackleford, Sabinus Arthur, Chen Zhang, Evan Lim, Kurt Juarez, Erick Bandala et al., Yan Wang* (co-corresponding), &quot;Molten Embedded Writing of End-Use Thermoplastics for Engineering Applications.&quot; ACS Applied Materials &amp; Interfaces (2025).</p>\n            \n        ",
     "id": "publication-005",
     "title": "Molten Embedded Writing of End-Use Thermoplastics for Engineering Applications",
-    "featured": false
+    "featured": false,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:O0nohqN1r9EC",
+    "scholar_title": "Molten Embedded Writing of End-Use Thermoplastics for Engineering Applications",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
@@ -51,455 +138,736 @@
     "citation_html": "\n            <p>Ye, Zefang, Travis D. Frazer, Haoran Cui, Xun Jia, Feng He, Tengfei Ma, Stephen March et al., Yan Wang*, &quot;Coherent phonon flatband generated in GaAs/AlAs superlattices via layer-selective optical pumping.&quot; Nature Communications 16, no. 1 (2025): 8436.</p>\n            \n        ",
     "id": "publication-006",
     "title": "Coherent phonon flatband generated in GaAs/AlAs superlattices via layer-selective optical pumping",
-    "featured": false
+    "featured": false,
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:kWvqk_afx_IC",
+    "scholar_title": "Coherent phonon flatband generated in GaAs/AlAs superlattices via layer-selective optical pumping",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Crosby, John, Haoran Cui*, and Yan Wang*. &quot;Significant ballistic thermal transport across graphene layers: effect of nanoholes and lithium intercalation.&quot; Applied Physics Letters 127, 082201 (2025)</p>\n            \n        ",
-    "id": "publication-007"
+    "id": "publication-007",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:-95Q15plzcUC",
+    "scholar_title": "Significant ballistic thermal transport across graphene layers: Effect of nanoholes and lithium intercalation",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Maranets, Theodore*, and Yan Wang*. &quot;How phonon coherence develops and contributes to heat conduction in periodic and aperiodic superlattices.&quot; International Journal of Thermal Sciences 217 (2025): 110018.</p>\n            \n        ",
-    "id": "publication-008"
+    "id": "publication-008",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:OBSaB-F7qqsC",
+    "scholar_title": "How phonon coherence develops and contributes to heat conduction in periodic and aperiodic superlattices",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Maranets, Theodore*, Evan Wallace Doe, and Yan Wang*. 2025. “Role of Interface Mixing on Coherent Heat Conduction in Periodic and Aperiodic Superlattices.” Journal of Physics Condensed Matter, July. <a href=\"https://doi.org/10.1088/1361-648x/adf36b\">https://doi.org/10.1088/1361-648x/adf36b.</a></p>\n            \n        ",
-    "id": "publication-009"
+    "id": "publication-009",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:U_HPUtbDl20C",
+    "scholar_title": "Role of interface mixing on coherent heat conduction in periodic and aperiodic superlattices",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>(INVITED) Chakraborty, Pranay, Milad Nasiri, Haoran Cui, Theodore Maranets, and Yan Wang. &quot;A Comprehensive Investigation of the Two-Phonon Characteristics of Heat Conduction in Superlattices.&quot; Crystals 15, no. 7 (2025): 654.</p>\n            \n        ",
-    "id": "publication-010"
+    "id": "publication-010",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:RoXSNcbkSzsC",
+    "scholar_title": "A comprehensive investigation of the two-phonon characteristics of heat conduction in superlattices",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Cui, Haoran, Iyyappa Rajan Panneerselvam, Pranay Chakraborty, Qiong Nian, Yiliang Liao, and Yan Wang*. &quot;Significantly enhanced interfacial thermal transport between single-layer graphene and water through basal-plane oxidation.&quot; Carbon 234 (2025): 119910.</p>\n            \n        ",
-    "id": "publication-011"
+    "id": "publication-011",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:QyXJ3EUuO1IC",
+    "scholar_title": "Significantly enhanced interfacial thermal transport between single-layer graphene and water through basal-plane oxidation",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>(INVITED; Editor’s Choice) Nasiri, Milad, and Yan Wang*. &quot;Evolution of Phonon Spectral Energy Density in Superlattice Structures.&quot; Crystals 15, no. 5 (2025): 446.</p>\n            \n        ",
-    "id": "publication-012"
+    "id": "publication-012",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:mKu_rENv82IC",
+    "scholar_title": "Evolution of phonon spectral energy density in superlattice structures",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Hua, Weijian, Cheng Zhang, Haoran Cui, Kellen Mitchell, Dale K. Hensley, Jihua Chen, Changwoo Do et al. (Yan Wang*, co-corresponding author) &quot;High‐Speed Embedded Ink Writing of Anatomic‐Size Organ Constructs.&quot; Advanced Science (2025): 2405980.</p>\n            \n        ",
-    "id": "publication-013"
+    "id": "publication-013",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:sszUF3NjhM4C",
+    "scholar_title": "High‐Speed Embedded Ink Writing of Anatomic‐Size Organ Constructs",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Cui, Haoran, Theodore Maranets, Tengfei Ma, and Yan Wang*. &quot;Spectral heat flux redistribution upon interfacial transmission.&quot; Journal of Physics: Condensed Matter 37, no. 11 (2025): 115002.</p>\n            \n        ",
-    "id": "publication-014"
+    "id": "publication-014",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:Dem6FJhTUoYC",
+    "scholar_title": "Spectral heat flux redistribution upon interfacial transmission",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2025",
     "citation_html": "\n            <p>Cui, Haoran, Weijian Hua, Lei Cao, Yifei Jin*, and Yan Wang*. &quot;Deep-neural-network molecular dynamics investigation of phonon thermal transport in polyether ether ketone.&quot; Computational Materials Science 249 (2025): 113641.</p>\n            \n        ",
-    "id": "publication-015"
+    "id": "publication-015",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:-jrNzM816MMC",
+    "scholar_title": "Deep-neural-network molecular dynamics investigation of phonon thermal transport in polyether ether ketone",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Milad Mozafarifard and Yan Wang*, (2024). Lattice heat backflow dynamics in bi-metallic nanolayers subjected to ultrafast laser heating. International Journal of Heat and Mass Transfer, 232, 125910.</p>\n            \n        ",
-    "id": "publication-016"
+    "id": "publication-016",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:jFemdcug13IC",
+    "scholar_title": "Lattice heat backflow dynamics in bi-metallic nanolayers subjected to ultrafast laser heating",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Claassen, M., Bingham, B., Chow, J. C., Watson, J. G., Chu, P., Wang, Y., &amp; Wang, X. (2024). Characterization of Lithium-ion Battery Fire Emissions—Part 2: Particle Size Distributions and Emission Factors. Batteries, 10(10), 366.</p>\n            \n        ",
-    "id": "publication-017"
+    "id": "publication-017",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:jE2MZjpN3IcC",
+    "scholar_title": "Characterization of lithium-ion battery fire emissions—Part 2: Particle size distributions and emission factors",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Kafil, V., Lee, B., Hadj-Nacer, M., Wang, Y., Yoon, J., Greiner, M., ... &amp; Zhu, X. (2024). Hydrogen sensing in different hydrogen-carrying gases using composites of PdSnO2 and halloysite nanotubes. Sensors and Actuators A: Physical, 376, 115622.</p>\n            \n        ",
-    "id": "publication-018"
+    "id": "publication-018",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:6_hjMsCP8ZoC",
+    "scholar_title": "Hydrogen sensing in different hydrogen-carrying gases using composites of PdSnO2 and halloysite nanotubes",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Panneerselvam, Iyyappa Rajan, Haoran Cui, Theodore Maranets, and Yan Wang*. &quot;Disorder-dominated and scattering-dominated thermal transport in clathrate hydrates.&quot; Computational Materials Science 244 (2024): 113189.</p>\n            \n        ",
-    "id": "publication-019"
+    "id": "publication-019",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:AXkvAH5U_nMC",
+    "scholar_title": "Disorder-dominated and scattering-dominated thermal transport in clathrate hydrates",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Claassen, M., Bingham, B., Chow, J. C., Watson, J. G., Wang, Y., &amp; Wang, X. (2024). Characterization of Lithium-Ion Battery Fire Emissions—Part 1: Chemical Composition of Fine Particles (PM2. 5). Batteries, 10(9), 301.</p>\n            \n        ",
-    "id": "publication-020"
+    "id": "publication-020",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:KaMxkj08jr0C",
+    "scholar_title": "Characterization of Lithium-Ion Battery Fire Emissions—Part 1: Chemical Composition of Fine Particles (PM2.5)",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Cui, Haoran., Maranets, Theodore, Ma, Tengfei, and Yan Wang* (2024). Spectral analysis of coherent and incoherent phonon transport in silicon nanomeshes. Physical Review B, 110(7), 075301.</p>\n            \n        ",
-    "id": "publication-021"
+    "id": "publication-021",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:1Ye0OR6EYb4C",
+    "scholar_title": "Spectral analysis of coherent and incoherent phonon transport in silicon nanomeshes",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Theodore Maranets, Yan Wang*, “Prominent phonon transmission across aperiodic superlattice through coherent mode-conversion.” Appl. Phys. Lett. 22 July 2024; 125 (4): 042205.</p>\n            \n        ",
-    "id": "publication-022"
+    "id": "publication-022",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:-7ulzOJl1JYC",
+    "scholar_title": "Prominent phonon transmission across aperiodic superlattice through coherent mode-conversion",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Maranets, Theodore, Milad Nasiri, and Yan Wang*. &quot;Influence of spatial coherence on phonon transmission across aperiodically arranged interfaces.&quot; Physics Letters A 512 (2024): 129572.</p>\n            \n        ",
-    "id": "publication-023"
+    "id": "publication-023",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:q-HalDI95KYC",
+    "scholar_title": "Influence of spatial coherence on phonon transmission across aperiodically arranged interfaces",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
-    "citation_html": "\n            <p>(Review) Kafil, Vala, Benjamin Sreenan, Mustafa Hadj-Nacer, Yan Wang, Jihwan Yoon, Miles Greiner, Pengbo Chu, Xiaoliang Wang, M. Sami Fadali, and Xiaoshan Zhu*. &quot;Review of Noble Metal and Metal-Oxide-Semiconductor Based Chemiresitive Hydrogen Sensors.&quot; Sensors and Actuators A: Physical (2024): 115440.</p>\n            \n        ",
-    "id": "publication-024"
+    "citation_html": "\n            <p>(Review) Kafil, Vala, Benjamin Sreenan, Mustafa Hadj-Nacer, Yan Wang, Jihwan Yoon, Miles Greiner, Pengbo Chu, Xiaoliang Wang, M. Sami Fadali, and Xiaoshan Zhu*. &quot;Review of Noble Metal and Metal-Oxide-Semiconductor Based Chemiresistive Hydrogen Sensors.&quot; Sensors and Actuators A: Physical (2024): 115440.</p>\n            \n        ",
+    "id": "publication-024",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:rHJHxKgnXwkC",
+    "scholar_title": "Review of noble metal and metal-oxide-semiconductor based chemiresistive hydrogen sensors",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Cui, Haoran, Tengfei Ma, and Yan Wang*. &quot;Elucidating optimal nanohole structures for suppressing phonon transport in nanomeshes.&quot; 2D Materials 11, no. 3 (2024): 035026.</p>\n            \n        ",
-    "id": "publication-025"
+    "id": "publication-025",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:Ade32sEp0pkC",
+    "scholar_title": "Elucidating optimal nanohole structures for suppressing phonon transport in nanomeshes",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Kun Bi, Xinyu Jiang, Haofan Sun, Yan Dou, Richard Nile, Dini Wang, Fazlay Rubbi, Xing Zhang, Yan Wang, Yiliang Liao, Kailong Jin, Houlong Zhuang, Wonmo Kang, Qiong Nian, &quot;Tuning the water interlayer spacer of microwave-synthesized holey graphene films towards high performance supercapacitor application.&quot; 2D Materials 11, no. 3 (2024): 035021.</p>\n            \n        ",
-    "id": "publication-026"
+    "id": "publication-026",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:SjuI4pbJlxcC",
+    "scholar_title": "Tuning the water interlayer spacer of microwave-synthesized holey graphene films towards high performance supercapacitor application",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2024",
     "citation_html": "\n            <p>Wang, Dini, Yan Dou, Xing Zhang, Kun Bi, Iyyappa Rajan Panneerselvam, Haofan Sun, Xinyu Jiang, Yan Wang, Qiong Nian*, etc. &quot;Manufacturing and applications of multi-functional holey two-dimensional nanomaterials–A review.&quot; Nano Today 55 (2024): 102162.</p>\n            \n        ",
-    "id": "publication-027"
+    "id": "publication-027",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:CdxZDUztZiMC",
+    "scholar_title": "Manufacturing and applications of multi-functional holey two-dimensional nanomaterials–A Review",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2023",
     "citation_html": "\n            <p>(INVITED) Maranets, Theodore, Haoran Cui, and Yan Wang*. &quot;Lattice thermal conductivity of embedded nanoparticle composites: the role of particle size distribution.&quot; Nanotechnology 35, no. 5 (2023): 055701.</p>\n            \n        ",
-    "id": "publication-028"
+    "id": "publication-028",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:LPtt_HFRSbwC",
+    "scholar_title": "Lattice thermal conductivity of embedded nanoparticle composites: the role of particle size distribution",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2023",
     "citation_html": "\n            <p>Maranets, Theodore, and Yan Wang*. &quot;Ballistic phonon lensing by the non-planar interfaces of embedded nanoparticles.&quot; New Journal of Physics 25, no. 10 (2023): 103038.</p>\n            \n        ",
-    "id": "publication-029"
+    "id": "publication-029",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:1yWc8FF-_SYC",
+    "scholar_title": "Ballistic phonon lensing by the non-planar interfaces of embedded nanoparticles",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2023",
     "citation_html": "\n            <p>Kafil, Vala, John Liles III, Lucia Coello-Poole, Bryan Lee, Adam Sjolund, Yan Wang, Jihwan Yoon, Miles Greiner, Mustafa Hadj-Nacer, and Xiaoshan Zhu. &quot;Highly sensitive detection of hydrogen gas using nanoporous composites of halloysite nanotubes and palladium.&quot; ACS Applied Electronic Materials 5, no. 9 (2023): 5202-5214.</p>\n            \n        ",
-    "id": "publication-030"
+    "id": "publication-030",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:hsZV8lGYWTMC",
+    "scholar_title": "Highly sensitive detection of hydrogen gas using nanoporous composites of halloysite nanotubes and palladium",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2023",
     "citation_html": "\n            <p>Milad Mozafarifard, Yiliang Liao, Qiong Nian, and Yan Wang*. &quot;Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport.&quot; International Journal of Heat and Mass Transfer 202 (2023): 123759.</p>\n            \n        ",
-    "id": "publication-031"
+    "id": "publication-031",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:Br1UauaknNIC",
+    "scholar_title": "Two-temperature time-fractional model for electron-phonon coupled interfacial thermal transport",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2022",
     "citation_html": "\n            <p>Tengfei Ma and Yan Wang*, &quot;Ex-situ modification of lattice thermal transport through coherent and incoherent heat baths.&quot; Materials Today Physics (2022): 100884.</p>\n            \n        ",
-    "id": "publication-032"
+    "id": "publication-032",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:yxmsSjX2EkcC",
+    "scholar_title": "Ex-situ modification of lattice thermal transport through coherent and incoherent heat baths",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2022",
     "citation_html": "\n            <p>Logeshwaran, Natarajan, Iyyappa Rajan Panneerselvam, Shanmugam Ramakrishnan, Ramasamy Santhosh Kumar, Ae Rhan Kim, Yan Wang, and Dong Jin Yoo*. &quot;Quasihexagonal Platinum Nanodendrites Decorated over CoS2‐N‐Doped Reduced Graphene Oxide for Electro‐Oxidation of C1‐, C2‐, and C3‐Type Alcohols.&quot; Advanced Science 9, no. 8 (2022): 2105344.</p>\n            \n        ",
-    "id": "publication-033"
+    "id": "publication-033",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:XUvXOeBm_78C",
+    "scholar_title": "Quasihexagonal Platinum Nanodendrites Decorated over CoS2‐N‐Doped Reduced Graphene Oxide for Electro‐Oxidation of C1‐, C2‐, and C3‐Type Alcohols",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2022",
-    "citation_html": "\n            <p>K Bi, R Dai, L Liu, Y Wang, Y Lu, Y Liao, L Ding, H Zhang, and Q Nian*, Scalable Nanomanufacturing of Holey Graphene via Chemical Etching: An Investigation on Process Mechanisms, Nanoscale, In Press, 2022.</p>\n            \n        ",
-    "id": "publication-034"
+    "citation_html": "\n            <p>K Bi, R Dai, L Liu, Y Wang, Y Lu, Y Liao, L Ding, H Zhang, and Q Nian*, Scalable Nanomanufacturing of Holey Graphene via Chemical Etching: An Investigation into Process Mechanisms, Nanoscale 14 (12), 4762–4769, 2022.</p>\n            \n        ",
+    "id": "publication-034",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:-mN3Mh-tlDkC",
+    "scholar_title": "Scalable nanomanufacturing of holey graphene via chemical etching: an investigation into process mechanisms",
+    "scholar_checked": "2026-10-16"
   },
   {
+    "id": "publication-158",
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2022",
-    "citation_html": "\n            <p>N Logeshwaran, I Rajan, S Ramakrishnan, R Kumar, AR Kim, Y Wang, and DJ Yoo. Quasihexagonal Platinum Nanodendrites Decorated over CoS2‐N‐Doped Reduced Graphene Oxide for Electro‐Oxidation of C1‐, C2‐, and C3‐Type Alcohols, Advanced Science (2022): 2105344.</p>\n            \n        ",
-    "id": "publication-035"
+    "title": "Giant reduction in thermal conductivity of single-chain polyvinylidene fluoride (PVDF) under external tensile strain",
+    "citation_html": "<p>Tengfei Ma, Yan Wang. “Giant reduction in thermal conductivity of single-chain polyvinylidene fluoride (PVDF) under external tensile strain.” <em>Physical Chemistry Chemical Physics</em> 24 (18), 11315-11321. 2022. <a href=\"https://pubs.rsc.org/cp/article-abstract/24/18/11315/723121\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:prdVHNxh-e8C",
+    "scholar_title": "Giant reduction in thermal conductivity of single-chain polyvinylidene fluoride (PVDF) under external tensile strain",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2021",
     "citation_html": "\n            <p>I Rajan*, P Chakraborty, Q Nian, Y Lu, Y Liao*, and Y Wang*, First-principles study of the impact of chemical doping and functional groups on the absorption spectra of graphene, Semiconductor Science and Technology 37, no. 2 (2021): 025013.</p>\n            \n        ",
-    "id": "publication-036"
+    "id": "publication-036",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:L1USKYWJimsC",
+    "scholar_title": "First-principles study of the impact of chemical doping and functional groups on the absorption spectra of graphene",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2021",
     "citation_html": "\n            <p>I Rajan*, MH Kim, C Baldo III, Y Wang* and M Sahasranaman, Strain Engineering of Polar Optical Phonon Scattering Mechanism – An Effective Way to Optimize the Power-factor and Lattice Thermal Conductivity of ScN, Physical Chemistry Chemical Physics, 2021, <a href=\"https://doi.org/10.1039/D1CP02971A\">https://doi.org/10.1039/D1CP02971A</a></p>\n            \n        ",
-    "id": "publication-037"
+    "id": "publication-037",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:jU7OWUQzBzMC",
+    "scholar_title": "Strain engineering of polar optical phonon scattering mechanism–an effective way to optimize the power-factor and lattice thermal conductivity of ScN",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2021",
     "citation_html": "\n            <p>Dai, W., Lv, L., Ma, T., Wang, X., Ying, J., Yan, Q., Tan, X., Gao, J., Xue, C., Yu, J., Yao, Y., Wei, Q., Sun, R., Wang, Y., Liu, T.-H., Chen, T., Xiang, R., Jiang, N., Xue, Q., Wong, C.-P., Maruyama, S., Lin, C.-T.*, Multiscale Structural Modulation of Anisotropic Graphene Framework for Polymer Composites Achieving Highly Efficient Thermal Energy Management,  Advanced Science, 2021, 8, 2003734. <a href=\"https://doi.org/10.1002/advs.202003734\">https://doi.org/10.1002/advs.202003734</a></p>\n            \n        ",
-    "id": "publication-038"
+    "id": "publication-038",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:CB2v5VPnA5kC",
+    "scholar_title": "Multiscale structural modulation of anisotropic graphene framework for polymer composites achieving highly efficient thermal energy management",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2021",
     "citation_html": "\n            <p>Y Liu, R Hu*, Y Wang*, J Ma, Z Yang, and X Luo, Big-data-accelerated aperiodic Si/Ge superlattice prediction for quenching thermal conduction via pattern analysis, Energy and AI 3 (2021): 100046. <a href=\"https://doi.org/10.1016/j.egyai.2020.100046\">https://doi.org/10.1016/j.egyai.2020.100046.</a></p>\n            \n        ",
-    "id": "publication-039"
+    "id": "publication-039",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:owLR8QvbtFgC",
+    "scholar_title": "Big-data-accelerated aperiodic Si/Ge superlattice prediction for quenching thermal conduction via pattern analysis",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-159",
+    "category": "Journal Papers",
+    "category_id": "journal-papers",
+    "year": "2021",
+    "title": "Research on heat transfer enhancement of vortex-induced vibration of side-by-side double tubes",
+    "citation_html": "<p>Yancai Su, Yan Wang, Lei Li, Chengliang Zhang, Weifeng Li, Yuexia Lv, Mengli Li. “Research on heat transfer enhancement of vortex-induced vibration of side-by-side double tubes.” <em>Journal of Thermophysics and Heat Transfer</em> 35 (3), 627-633. 2021. <a href=\"https://arc.aiaa.org/doi/abs/10.2514/1.T6183\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:WC9gN4BGCRcC",
+    "scholar_title": "Research on heat transfer enhancement of vortex-induced vibration of side-by-side double tubes",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2020",
     "citation_html": "\n            <p>(Invited Research Paper) P Chakraborty, I Chiu, T Ma, and Y Wang*, Complex temperature dependence of coherent and incoherent lattice thermal transport in superlattices, Nanotechnology 32, no. 6 (2020): 065401. <a href=\"https://doi.org/10.1088/1361-6528/abc2ef\">https://doi.org/10.1088/1361-6528/abc2ef</a></p>\n            \n        ",
-    "id": "publication-040"
+    "id": "publication-040",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:WC23djZS0W4C",
+    "scholar_title": "Complex temperature dependence of coherent and incoherent lattice thermal transport in superlattices",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2020",
     "citation_html": "\n            <p>T Ma, C Lin, and Y Wang*, The dimensionality effect on phonon localization in graphene/hexagonal boron nitride superlattices, 2D Materials 7, no. 3 (2020): 035029, <a href=\"https://doi.org/10.1088/2053-1583/ab93e2\">https://doi.org/10.1088/2053-1583/ab93e2</a></p>\n            \n        ",
-    "id": "publication-041"
+    "id": "publication-041",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:MhiOAD_qIWkC",
+    "scholar_title": "The Dimensionality Effect on Phonon Localization in Graphene/Hexagonal Boron Nitride Superlattices",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2020",
     "citation_html": "\n            <p>P Chakraborty, Y Liu, T Ma, X Guo, L Cao, R Hu*, and Y Wang*, Quenching Thermal Transport in Aperiodic Superlattices: a Molecular Dynamics and Machine Learning Study, ACS Appl. Mater. Interfaces 2020, 12, 7, 8795-8804. <a href=\"https://doi.org/10.1021/acsami.9b18084\">https://doi.org/10.1021/acsami.9b18084</a></p>\n            \n        ",
-    "id": "publication-042"
+    "id": "publication-042",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:1taIhTC69MYC",
+    "scholar_title": "Quenching thermal transport in aperiodic superlattices: A molecular dynamics and machine learning study",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2020",
     "citation_html": "\n            <p>D Wang, R Dai, X Zhang, L Liu, Y Lu, Y Wang, Y Liao, and Q Nian*, Scalable and controlled creation of nanoholes in graphene by microwave-assisted chemical etching for improved electrochemical properties, Carbon, 2020. <a href=\"https://doi.org/10.1016/j.carbon.2020.01.076\">https://doi.org/10.1016/j.carbon.2020.01.076</a></p>\n            \n        ",
-    "id": "publication-043"
+    "id": "publication-043",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:FiytvqdAVhgC",
+    "scholar_title": "Scalable and controlled creation of nanoholes in graphene by microwave-assisted chemical etching for improved electrochemical properties",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2020",
     "citation_html": "\n            <p>(Invited Review) T Ma, P Chakraborty, X Guo, L Cao, and Y Wang*, First-principles Modeling of Thermal Transport in Materials: Achievements, Opportunities, and Challenges, International Journal of Thermophysics (2020) 41: 9. <a href=\"https://doi.org/10.1007/s10765-019-2583-4\">https://doi.org/10.1007/s10765-019-2583-4</a></p>\n            \n        ",
-    "id": "publication-044"
+    "id": "publication-044",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:WHdLCjDvYFkC",
+    "scholar_title": "First-principles Modeling of Thermal Transport in Materials: Achievements, Opportunities, and Challenges",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2019",
     "citation_html": "\n            <p>S Wu, G Xiong, H Yang, Y Tian, B Gong, H Wan, Y Wang, TS. Fisher, J Yan, K Cen, Z Bo, K Ostrikov, Scalable Production of Integrated Graphene Nanoarchitectures for Ultrafast Solar-Thermal Conversion and Vapor Generation, Cell Matter, 2019 Oct 2;1(4):1017-32. <a href=\"https://doi.org/10.1016/j.matt.2019.06.010\">https://doi.org/10.1016/j.matt.2019.06.010</a></p>\n            \n        ",
-    "id": "publication-045"
+    "id": "publication-045",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:LdasjJ6CEcoC",
+    "scholar_title": "Scalable production of integrated graphene nanoarchitectures for ultrafast solar-thermal conversion and vapor generation",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2019",
     "citation_html": "\n            <p>W Dai, T Ma, Q Yan, J Gao, X Tan, L Lv, H Hou, Q Wei, J Yu, J Wu, Y Yao, S Du, R Sun, N Jiang*, Y Wang*, J Kong, C Wong, S Maruyama, and C Lin*, Metal-Level Thermally Conductive yet Soft Graphene Thermal Interface Materials, ACS Nano 2019, 13, 10, 11561-11571, <a href=\"https://doi.org/10.1021/acsnano.9b05163\">https://doi.org/10.1021/acsnano.9b05163</a></p>\n            \n        ",
-    "id": "publication-046"
+    "id": "publication-046",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:7Hz3ACDFbsoC",
+    "scholar_title": "Metal-Level Thermally Conductive yet Soft Graphene Thermal Interface Materials",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2019",
     "citation_html": "\n            <p>A Zahiri, P Chakraborty, Y Wang, and L Cao*, Strong strain hardening in ultrafast melt-quenched nanocrystalline Cu: The role of fivefold twins, Journal of Applied Physics 126, 075103 (2019), <a href=\"https://doi.org/10.1063/1.5110287\">https://doi.org/10.1063/1.5110287</a></p>\n            \n        ",
-    "id": "publication-047"
+    "id": "publication-047",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:cK4Rrx0J3m0C",
+    "scholar_title": "Strong strain hardening in ultrafast melt-quenched nanocrystalline Cu: The role of fivefold twins",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2019",
     "citation_html": "\n            <p>Wu, S. H., Xiong, G. P., Yang, H. C., Gong, B. Y., Tian, Y. K., Xu, C. X., Wang, Y., Fisher, T., Yan, J. H., Cen, K. F., Luo, T. F., Tu, X., Bo, Z., K. (Ken) Ostrikov, Multifunctional Solar Waterways: Plasma‐Enabled Self‐Cleaning Nanoarchitectures for Energy‐Efficient Desalination, Advanced Energy Materials 2019, 9, 1901286, <a href=\"https://doi.org/10.1002/aenm.201901286\">https://doi.org/10.1002/aenm.201901286</a></p>\n            \n        ",
-    "id": "publication-048"
+    "id": "publication-048",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:kVjdVfd2voEC",
+    "scholar_title": "Multifunctional solar waterways: plasma‐enabled self‐cleaning nanoarchitectures for energy‐efficient desalination",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2019",
     "citation_html": "\n            <p>P Chakraborty, T Ma, L Cao, and Y Wang*, Significantly enhanced convective heat transfer through surface modification in nanochannels, International Journal of Heat and Mass Transfer, Volume 136, June 2019, Pages 702-708, <a href=\"https://doi.org/10.1016/j.ijheatmasstransfer.2019.03.053\">https://doi.org/10.1016/j.ijheatmasstransfer.2019.03.053</a></p>\n            \n        ",
-    "id": "publication-049"
+    "id": "publication-049",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:U4n9YNQMCAIC",
+    "scholar_title": "Significantly enhanced convective heat transfer through surface modification in nanochannels",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2019",
     "citation_html": "\n            <p>X Li, W Park, Y Wang, Y Chen, and X Ruan*, Reducing Interfacial Thermal Resistance between Metal and Dielectric Materials by a Metal Interlayer, Journal of Applied Physics 125, 045302 (2019), <a href=\"https://doi.org/10.1063/1.5079428\">https://doi.org/10.1063/1.5079428</a></p>\n            \n        ",
-    "id": "publication-050"
+    "id": "publication-050",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:v1_lew4L6wgC",
+    "scholar_title": "Reducing interfacial thermal resistance between metal and dielectric materials by a metal interlayer",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2018",
     "citation_html": "\n            <p>(Invited Review) P Chakraborty, T Ma, A Zahiri, L Cao, and Y Wang*, Carbon-Based Materials for Thermoelectrics, Advances in Condensed Matter Physics, vol. 2018, Article ID 3898479, 29 pages, 2018, <a href=\"https://doi.org/10.1155/2018/3898479\">https://doi.org/10.1155/2018/3898479</a></p>\n            \n        ",
-    "id": "publication-051"
+    "id": "publication-051",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:BzfGm06jWhQC",
+    "scholar_title": "Carbon‐based materials for thermoelectrics",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2018",
     "citation_html": "\n            <p>P Chakraborty, G Xiong, L Cao*, and Y Wang*, Lattice thermal transport in superhard hexagonal diamond and wurtzite boron nitride: A comparative study with cubic diamond and cubic boron nitride, Carbon, vol. 139, pp. 85-93, (2018), <a href=\"https://doi.org/10.1016/j.carbon.2018.06.025\">https://doi.org/10.1016/j.carbon.2018.06.025</a></p>\n            \n        ",
-    "id": "publication-052"
+    "id": "publication-052",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:43bX7VzcjpAC",
+    "scholar_title": "Lattice thermal transport in superhard hexagonal diamond and wurtzite boron nitride: A comparative study with cubic diamond and cubic boron nitride",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2018",
     "citation_html": "\n            <p>Z Lu, Y Wang, and X Ruan*, The critical particle size for enhancing thermal conductivity in metal nanoparticle-polymer composites, Journal of Applied Physics, 123 (7), 074302 (2018), <a href=\"https://doi.org/10.1063/1.5014987\">https://doi.org/10.1063/1.5014987</a></p>\n            \n        ",
-    "id": "publication-053"
+    "id": "publication-053",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:jgBuDB5drN8C",
+    "scholar_title": "The critical particle size for enhancing thermal conductivity in metal nanoparticle-polymer composites",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2017",
     "citation_html": "\n            <p>P Chakraborty, L Cao, and Y Wang*, Ultralow lattice thermal conductivity of the random multilayer structure with lattice imperfection, Scientific Reports 7, no. 1 (2017): 8134, <a href=\"https://doi.org/10.1038/s41598-017-08359-2\">https://doi.org/10.1038/s41598-017-08359-2</a></p>\n            \n        ",
-    "id": "publication-054"
+    "id": "publication-054",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:ubry08Y2EpUC",
+    "scholar_title": "Ultralow Lattice Thermal Conductivity of the Random Multilayer Structure with Lattice Imperfections",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2016",
     "citation_html": "\n            <p>Y. Wang, Z. Lu, and X. Ruan*, &quot;First principles calculation of lattice thermal conductivity of metals considering phonon-phonon and phonon-electron scattering,&quot; Journal of Applied Physics 119, 225109 (2016). <a href=\"https://doi.org/10.1063/1.4953366\">https://doi.org/10.1063/1.4953366</a></p>\n            \n        ",
-    "id": "publication-055"
+    "id": "publication-055",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:ALROH1vI_8AC",
+    "scholar_title": "First principles calculation of lattice thermal conductivity of metals considering phonon-phonon and phonon-electron scattering",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2016",
     "citation_html": "\n            <p>Z. Lu, Y. Wang, and X. Ruan*, &quot;Metal/dielectric thermal interfacial transport considering cross-interface electron-phonon coupling: Theory, two-temperature molecular dynamics, and thermal circuit,&quot; Physical Review B 93, 064302 (2016). <a href=\"https://doi.org/10.1103/PhysRevB.93.064302\">https://doi.org/10.1103/PhysRevB.93.064302</a></p>\n            \n        ",
-    "id": "publication-056"
+    "id": "publication-056",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:48xauSegjOkC",
+    "scholar_title": "Metal/dielectric thermal interfacial transport considering cross-interface electron-phonon coupling: Theory, two-temperature molecular dynamics, and thermal circuit",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2016",
     "citation_html": "\n            <p>Y. Wang, Z. Lu, A. Roy, and X. Ruan*, &quot;Effect of interlayer on interfacial thermal transport and hot electron cooling in metal-dielectric systems: an electron-phonon coupling perspective,&quot; Journal of Applied Physics 119, 065103 (2016). <a href=\"https://doi.org/10.1063/1.4941347\">https://doi.org/10.1063/1.4941347</a></p>\n            \n        ",
-    "id": "publication-057"
+    "id": "publication-057",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:CaZNVDsoPx4C",
+    "scholar_title": "Effect of interlayer on interfacial thermal transport and hot electron cooling in metal-dielectric systems: An electron-phonon coupling perspective",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2015",
     "citation_html": "\n            <p>Y. Wang, C. Gu, and X. Ruan*, &quot;Optimization of the random multilayer structure to break the random-alloy limit of thermal conductivity,&quot; Applied Physics Letters, 106, 073104, 2015. <a href=\"https://doi.org/10.1063/1.4913319\">https://doi.org/10.1063/1.4913319</a></p>\n            \n        ",
-    "id": "publication-058"
+    "id": "publication-058",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:artPoR2Yc-kC",
+    "scholar_title": "Optimization of the random multilayer structure to break the random-alloy limit of thermal conductivity",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2014",
     "citation_html": "\n            <p>Y. Wang, H. Huang, and X. Ruan*, &quot;Decomposition of coherent and incoherent phonon conduction in superlattices and random multilayers,&quot; Physical Review B 90, 165406, 2014. <a href=\"https://link.aps.org/doi/10.1103/PhysRevB.90.165406\">https://link.aps.org/doi/10.1103/PhysRevB.90.165406</a></p>\n            \n        ",
-    "id": "publication-059"
+    "id": "publication-059",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:tH6gc1N1XXoC",
+    "scholar_title": "Decomposition of coherent and incoherent phonon conduction in superlattices and random multilayers",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2014",
     "citation_html": "\n            <p>(Invited Review) Y. Wang, A. Vallabhaneni, B. Qiu, and X. Ruan*, &quot;Two-Dimensional Thermal Transport in Graphene: A Review of Numerical Modeling Studies,&quot; Nanoscale and Microscale Thermophysical Engineering 18, no. 2 (2014): 155-182. <a href=\"https://doi.org/10.1080/15567265.2014.891680\">https://doi.org/10.1080/15567265.2014.891680</a></p>\n            <ul><li>Editor’s Choice of Ten Significant Articles that Published in 2013 and 2014</li></ul>\n        ",
-    "id": "publication-060"
+    "id": "publication-060",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:W7OEmFMy1HYC",
+    "scholar_title": "Two-dimensional thermal transport in graphene: a review of numerical modeling studies",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2014",
     "citation_html": "\n            <p>Y. Wang, A. Vallabhaneni, J. Hu, B. Qiu, Y. Chen, and X. Ruan*, &quot;Phonon Lateral Confinement Enables Thermal Rectification in Asymmetric Single-Material Nanostructures,&quot; Nano Letters, 2014, 14 (2), pp 592–596. <a href=\"https://doi.org/10.1021/nl403773f\">https://doi.org/10.1021/nl403773f</a></p>\n            <ul><li>Media coverage: &quot;Can graphene enable thermal transistors?” IEEE Spectrum; &quot;Research could bring new devices that control heat flow.&quot; ScienceDaily, Purdue News, etc.</li></ul>\n        ",
-    "id": "publication-061"
+    "id": "publication-061",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:Y0pCki6q_DkC",
+    "scholar_title": "Phonon Lateral Confinement Enables Thermal Rectification in Asymmetric Single-Material Nanostructures",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2013",
     "citation_html": "\n            <p>S. W. Finefrock, Y. Wang (co-first-author with equal contribution), J. B. Ferguson, J. V. Ward, H. Fang, J. E. Pfluger, D. S. Dudis, X. Ruan*, and Y. Wu*, &quot;Measurement of thermal conductivity of PbTe Nanocrystal Coated Glass Fibers by the 3ω method&quot;, Nano Letters, 2013, 13(11), pp 5006-5012. <a href=\"https://doi.org/10.1021/nl400558u\">https://doi.org/10.1021/nl400558u</a></p>\n            \n        ",
-    "id": "publication-062"
+    "id": "publication-062",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:Tyk-4Ss8FVUC",
+    "scholar_title": "Measurement of thermal conductivity of pbte nanocrystal coated glass fibers by the 3ω method",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2012",
     "citation_html": "\n            <p>Y. Wang, B. Qiu, and X. Ruan*, &quot;Edge effect on thermal transport in graphene nanoribbons: A phonon localization mechanism beyond edge roughness scattering,&quot; Applied Physics Letters, 101, 013101, 2012. <a href=\"https://doi.org/10.1063/1.4732155\">https://doi.org/10.1063/1.4732155</a></p>\n            <ul><li>Figure 5 selected as the cover of issue 18(2), 2014 of Nanosc. Microsc. Therm.</li></ul>\n        ",
-    "id": "publication-063"
+    "id": "publication-063",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:UeHWp8X0CEIC",
+    "scholar_title": "Edge effect on thermal transport in graphene nanoribbons: A phonon localization mechanism beyond edge roughness scattering",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2012",
     "citation_html": "\n            <p>B. Qiu, Y. Wang, Q. Zhao, and X. Ruan*, &quot;The effects of diameter and chirality on the thermal transport in free-standing and supported carbon-nanotubes,&quot; Applied Physics Letters 100, 233105, 2012. <a href=\"https://doi.org/10.1063/1.4725194\">https://doi.org/10.1063/1.4725194</a></p>\n            \n        ",
-    "id": "publication-064"
+    "id": "publication-064",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:IjCSPb-OGe4C",
+    "scholar_title": "The effects of diameter and chirality on the thermal transport in free-standing and supported carbon-nanotubes",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2012",
     "citation_html": "\n            <p>Y. Wang, X. Ruan*, and A. Roy, &quot;Two-temperature nonequilibrium molecular dynamics simulation of thermal transport across metal-nonmetal interfaces,&quot; Physical Review B, 85, 205311, 2012. <a href=\"https://link.aps.org/doi/10.1103/PhysRevB.85.205311\">https://link.aps.org/doi/10.1103/PhysRevB.85.205311</a></p>\n            \n        ",
-    "id": "publication-065"
+    "id": "publication-065",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:u-x6o8ySG0sC",
+    "scholar_title": "Two-temperature nonequilibrium molecular dynamics simulation of thermal transport across metal-nonmetal interfaces",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2012",
     "citation_html": "\n            <p>Y. Wang, S. Chen, and X. Ruan*, &quot;Tunable thermal rectification in graphene nanoribbons through defect engineering: a molecular dynamics study,&quot; Applied Physics Letters 100, 163101, 2012. <a href=\"https://doi.org/10.1063/1.3703756\">https://doi.org/10.1063/1.3703756</a></p>\n            \n        ",
-    "id": "publication-066"
+    "id": "publication-066",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:qjMakFHDy7sC",
+    "scholar_title": "Tunable thermal rectification in graphene nanoribbons through defect engineering: a molecular dynamics study",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Journal Papers",
     "category_id": "journal-papers",
     "year": "2011",
     "citation_html": "\n            <p>J. Hu, Y. Wang, A. Vallabhaneni, X. Ruan*, and Y. Chen*, &quot;Nonlinear thermal transport and negative differential thermal conductance in graphene nanoribbons,&quot; Applied Physics Letters, 99, 113101, 2011. <a href=\"https://doi.org/10.1063/1.3630026\">https://doi.org/10.1063/1.3630026</a></p>\n            <ul><li>Highlighted by Nature Nanotechnology 6, 609, 2011</li></ul>\n        ",
-    "id": "publication-067"
+    "id": "publication-067",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:u5HHmVD_uO8C",
+    "scholar_title": "Nonlinear thermal transport and negative differential thermal conductance in graphene nanoribbons",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-160",
+    "category": "Preprints",
+    "category_id": "preprints",
+    "year": "2026",
+    "title": "Stacking-Engineered Thermal Transport and Phonon Filtering in Rhenium Disulfide",
+    "citation_html": "<p>Yongjian Zhou, Haoran Cui, Zefang Ye, Jung-Fu Lin, Yan Wang, Yaguo Wang. “Stacking-Engineered Thermal Transport and Phonon Filtering in Rhenium Disulfide.” <em>arXiv preprint arXiv:2602.15002</em>. 2026. <a href=\"https://arxiv.org/abs/2602.15002\">Read preprint ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:ziOE8S1-AIUC",
+    "scholar_title": "Stacking-Engineered Thermal Transport and Phonon Filtering in Rhenium Disulfide",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-166",
+    "category": "Preprints",
+    "category_id": "preprints",
+    "year": "2026",
+    "title": "Fundamental concepts of thermal phonon coherence",
+    "citation_html": "<p>Theodore Maranets, Haoran Cui, Milad Nasiri, Evan Doe, Yan Wang. “Fundamental concepts of thermal phonon coherence.” <em>arXiv preprint arXiv:2609.36270</em>. 2026. <a href=\"https://arxiv.org/abs/2609.36270\">Read preprint ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:raTqNPD5sRQC",
+    "scholar_title": "Fundamental concepts of thermal phonon coherence",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-171",
+    "category": "Preprints",
+    "category_id": "preprints",
+    "year": "2026",
+    "title": "Analyzing coherent phonon mode-conversion in gradient superlattices with atomistic wave-packet simulations",
+    "citation_html": "<p>Evan Wallace Doe, Theodore Maranets, Yan Wang. “Analyzing coherent phonon mode-conversion in gradient superlattices with atomistic wave-packet simulations.” <em>arXiv preprint arXiv:2603.13572</em>. 2026. <a href=\"https://arxiv.org/abs/2603.13572\">Read preprint ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:VN7nJs4JPk0C",
+    "scholar_title": "Analyzing coherent phonon mode-conversion in gradient superlattices with atomistic wave-packet simulations",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-157",
+    "category": "Books & Book Chapters",
+    "category_id": "books",
+    "year": "2019",
+    "title": "Carbon based nanomaterials for advanced thermal and electrochemical energy storage and conversion",
+    "citation_html": "<p>Rajib Paul, Vinodkumar Etacheri, Yan Wang, Cheng-Te Lin. “Carbon based nanomaterials for advanced thermal and electrochemical energy storage and conversion.” <em>Elsevier</em>. 2019.</p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:7H_MAutzIkAC",
+    "scholar_title": "Carbon based nanomaterials for advanced thermal and electrochemical energy storage and conversion",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-173",
+    "category": "Books & Book Chapters",
+    "category_id": "books",
+    "year": "2019",
+    "title": "Carbon nanomaterials for thermoelectric applications",
+    "citation_html": "<p>Pranay Chakraborty, Yan Wang. “Carbon nanomaterials for thermoelectric applications.” <em>Carbon Based Nanomaterials for Advanced Thermal and Electrochemical Energy Storage and Conversion</em>, 121-137. 2019. <a href=\"https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128140833000068\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:PYBJJbyH-FwC",
+    "scholar_title": "Carbon nanomaterials for thermoelectric applications",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-174",
+    "category": "Books & Book Chapters",
+    "category_id": "books",
+    "year": "2019",
+    "title": "Carbon nanomaterials for thermal rectification",
+    "citation_html": "<p>Tengfei Ma, Yan Wang. “Carbon nanomaterials for thermal rectification.” <em>Carbon Based Nanomaterials for Advanced Thermal and Electrochemical Energy Storage and Conversion</em>, 103-119. 2019. <a href=\"https://www.sciencedirect.com/science/chapter/edited-volume/pii/B9780128140833000056\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:wKETBy42zhYC",
+    "scholar_title": "Carbon nanomaterials for thermal rectification",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Editorial",
     "category_id": "editorial",
     "year": "2017",
     "citation_html": "\n            <p>Y. Wang, H. Bao, Y. Dong, R. Paul, and H. Deng, &quot;Innovative Nanomaterials for Thermal Applications.&quot; J. Nanomaterials 2017 (2017)</p>\n            \n        ",
-    "id": "publication-068"
+    "id": "publication-068",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:1lhNe0rCu4AC",
+    "scholar_title": "Innovative nanomaterials for thermal applications",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Refereed Conference Papers",
     "category_id": "conference-papers",
     "year": "2024",
     "citation_html": "\n            <p>Belhassani, Lamia, Brandon Hager, Theodore Maranets, John Lee, Yan Wang, Ji Hwan Yoon, Xiaoshan Zhu, Miles Greiner, and Mustafa Hadj-Nacer*. &quot;Development of a Monitoring System for Interrogating the Internal Condition of SNF Canisters.&quot; In Pressure Vessels and Piping Conference, vol. 88513, p. V005T07A019. American Society of Mechanical Engineers, 2024.</p>\n            \n        ",
-    "id": "publication-069"
+    "id": "publication-069",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:HGTzPopzzJcC",
+    "scholar_title": "Development of a Monitoring System for Interrogating the Internal Condition of SNF Canisters",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Refereed Conference Papers",
     "category_id": "conference-papers",
     "year": "2013",
     "citation_html": "\n            <p>Y. Wang and X. Ruan, &quot;An Evaluation of Energy Transfer Pathways in Thermal Transport Across Solid/Solid Interfaces,&quot; ASME 2013 Heat Transfer Summer Conference, Minneapolis, Minnesota, USA, July 14–19, 2013</p>\n            \n        ",
-    "id": "publication-070"
+    "id": "publication-070",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:YsMSGLbcyi4C",
+    "scholar_title": "An evaluation of energy transfer pathways in thermal transport across solid/solid interfaces",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Refereed Conference Papers",
@@ -520,28 +888,52 @@
     "category_id": "conference-papers",
     "year": "2011",
     "citation_html": "\n            <p>Y. Wang and X. Ruan, &quot;Role of edge chirality and isotope doping in thermal transport and thermal rectification in graphene nanoribbons,&quot; ASME paper IMECE2011-63169, Proceedings of the ASME 2011 International Mechanical Engineering Congress &amp; Exposition, Denver, CO, November, 2011</p>\n            \n        ",
-    "id": "publication-073"
+    "id": "publication-073",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:2osOgNQ5qMEC",
+    "scholar_title": "Role of EDGE chirality and isotope doping in thermal transport and thermal rectification in graphene nanoribbons",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Refereed Conference Papers",
     "category_id": "conference-papers",
     "year": "2011",
     "citation_html": "\n            <p>Y. Wang, B. Qiu, J. Hu, and X. Ruan, &quot;Necessary conditions for thermal rectification and negative differential thermal conductance in graphene nanoribbons,&quot; 2011 MRS Spring Meeting and Exhibition, San Francisco, April 2011</p>\n            \n        ",
-    "id": "publication-074"
+    "id": "publication-074",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:9yKSN-GCB0IC",
+    "scholar_title": "Necessary conditions for thermal rectification and negative differential thermal conductance in graphene nanoribbons",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Refereed Conference Papers",
     "category_id": "conference-papers",
     "year": "2011",
     "citation_html": "\n            <p>(INVITED) B. Qiu, Y. Wang and X. Ruan, &quot;Linear and Nonlinear Thermal Transport in Graphene: Molecular Dynamics Simulations,&quot; 2011 MRS Spring Meeting and Exhibit, San Francisco, April 2011. MRS Proceedings 2011 1347: mrss11-1347-bb10-08</p>\n            \n        ",
-    "id": "publication-075"
+    "id": "publication-075",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:d1gkVwhDpl0C",
+    "scholar_title": "Linear and nonlinear thermal transport in graphene: Molecular dynamics simulations",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-163",
+    "category": "Dissertations",
+    "category_id": "dissertations",
+    "year": "2016",
+    "title": "Multiscale simulations of thermal transport in graphene-based materials and across metal-semiconductor interfaces",
+    "citation_html": "<p>Yan Wang. “Multiscale simulations of thermal transport in graphene-based materials and across metal-semiconductor interfaces.” <em>Ph.D. dissertation, Purdue University</em>. 2016. <a href=\"https://docs.lib.purdue.edu/open_access_dissertations/1399/\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:zCSUwVk65WsC",
+    "scholar_title": "Multiscale simulations of thermal transport in graphene-based materials and across metal-semiconductor interfaces",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Cloud-Based Research Tools",
     "category_id": "tools",
     "year": "2012",
     "citation_html": "\n            <p>Y. Wang, X. Jin, and X. Ruan, &quot;Two-temperature Non-equilibrium Molecular Dynamics Simulator,&quot; <a href=\"https://nanohub.org/resources/ttmmd\">http://nanohub.org/resources/ttmmd,</a> 2012. (DOI: 10.4231/D3416SZ40)</p>\n            \n        ",
-    "id": "publication-076"
+    "id": "publication-076",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:WF5omc3nYNoC",
+    "scholar_title": "Two-temperature Non-equilibrium Molecular Dynamics Simulator",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Seminars and Conference Talks",
@@ -570,6 +962,18 @@
     "year": "2026",
     "citation_html": "\n            <p>(INVITED) Yan Wang*, &quot;Application of deep-neural-network molecular dynamics to elucidate the atomistic mechanisms of laser processing of two-dimensional materials,&quot; International Conference on Plasticity, Damage, and Fracture, Geelong, Victoria, Australia, January 2026</p>\n            \n        ",
     "id": "publication-080"
+  },
+  {
+    "id": "publication-170",
+    "category": "Seminars and Conference Talks",
+    "category_id": "talks",
+    "year": "2026",
+    "title": "Understanding phonon spatial coherence via atomistic wave-packet simulations",
+    "citation_html": "<p>Theodore Maranets, Yan Wang. “Understanding phonon spatial coherence via atomistic wave-packet simulations.” <em>APS Global Physics Summit 2026</em>. 2026. <a href=\"https://meetings-archive.aps.org/smt/2026/mar-g23/7/\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:F2UWTTQJPOcC",
+    "scholar_title": "Understanding phonon spatial coherence via atomistic wave-packet simulations",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Seminars and Conference Talks",
@@ -723,7 +1127,10 @@
     "category_id": "talks",
     "year": "2023",
     "citation_html": "\n            <p>Theodore Maranets* and Yan Wang, &quot;Atomistic investigation of phonon transport through nanoparticles,&quot; APS March Meeting 2023 - Las Vegas, NV, March 9, 2023.</p>\n            \n        ",
-    "id": "publication-102"
+    "id": "publication-102",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:MAUkC_7iAq8C",
+    "scholar_title": "Atomistic investigation of phonon transport through nanoparticles",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Seminars and Conference Talks",
@@ -791,6 +1198,13 @@
   {
     "category": "Seminars and Conference Talks",
     "category_id": "talks",
+    "year": "2020",
+    "citation_html": "\n            <p>P Chakraborty* and Y Wang, Physics-guided Machine-Learning Design of Aperiodic Superlattices with Maximum Localization of Coherent Phonons, 2020 TMS Annual Meeting &amp; Exhibition, San Diego, CA, February 23-27, 2020</p>\n            \n        ",
+    "id": "publication-114"
+  },
+  {
+    "category": "Seminars and Conference Talks",
+    "category_id": "talks",
     "year": "2019",
     "citation_html": "\n            <p>(Invited Panel Talk) Y Wang*, Reduced Phonon Transport in Disordered Materials: Scattering or Localization? The 2nd Pacific Rim Thermal Engineering Conference (PRTEC), Maui, Hawaii, Dec 13-17, 2019</p>\n            \n        ",
     "id": "publication-112"
@@ -801,13 +1215,6 @@
     "year": "2019",
     "citation_html": "\n            <p>Y Wang*, Coherent and Incoherent Phonon Transport in Layered Structures, The 2nd Pacific Rim Thermal Engineering Conference (PRTEC), Maui, Hawaii, Dec 13-17, 2019</p>\n            \n        ",
     "id": "publication-113"
-  },
-  {
-    "category": "Seminars and Conference Talks",
-    "category_id": "talks",
-    "year": "2020",
-    "citation_html": "\n            <p>P Chakraborty* and Y Wang, Physics-guided Machine-Learning Design of Aperiodic Superlattices with Maximum Localization of Coherent Phonons, 2020 TMS Annual Meeting &amp; Exhibition, San Diego, CA, February 23-27, 2020</p>\n            \n        ",
-    "id": "publication-114"
   },
   {
     "category": "Seminars and Conference Talks",
@@ -936,11 +1343,35 @@
     "id": "publication-132"
   },
   {
+    "id": "publication-175",
+    "category": "Seminars and Conference Talks",
+    "category_id": "talks",
+    "year": "2014",
+    "title": "Size Effect in Non-equilibrium Molecular Dynamics",
+    "citation_html": "<p>Chongjie Gu, Yan Wang, Xiulin Ruan. “Size Effect in Non-equilibrium Molecular Dynamics.” <em>Purdue University, Summer Undergraduate Research Fellowship (SURF) presentations</em>. 2014. <a href=\"https://docs.lib.purdue.edu/surf/2014/presentations/38/\">View publication ↗</a></p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:lgwcVrK6X84C",
+    "scholar_title": "Size Effect in Non-equilibrium Molecular Dynamics",
+    "scholar_checked": "2026-10-16"
+  },
+  {
     "category": "Seminars and Conference Talks",
     "category_id": "talks",
     "year": "2013",
     "citation_html": "\n            <p>Y. Wang* and X. Ruan,  &quot;An Evaluation of Energy Transfer Pathways in Thermal Transport Across Solid/Solid Interfaces,&quot; 2013 MRS Spring Meeting &amp; Exhibit, April 1-5, 2013, San Francisco, California</p>\n            \n        ",
     "id": "publication-133"
+  },
+  {
+    "id": "publication-176",
+    "category": "Seminars and Conference Talks",
+    "category_id": "talks",
+    "year": "2013",
+    "title": "PbTe nanocrystal coated glass fiber for thermoelectric energy harvesting",
+    "citation_html": "<p>Scott W Finefrock, Yan Wang, Daxin Liang, Haoran Yang, John B Fergsuson, James V Ward, Haiyu Fang, Jonathan E Pfluger, Douglas S Dudis, Xiulin Ruan, Yue Wu. “PbTe nanocrystal coated glass fiber for thermoelectric energy harvesting.” <em>ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY</em> 246. 2013.</p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:eQOLeE2rZwMC",
+    "scholar_title": "PbTe nanocrystal coated glass fiber for thermoelectric energy harvesting",
+    "scholar_checked": "2026-10-16"
   },
   {
     "category": "Seminars and Conference Talks",
@@ -1102,5 +1533,29 @@
     "year": "2011",
     "citation_html": "\n            <p>Y. Wang* and X. Ruan, &quot;Two-temperature molecular dynamics simulations of thermal transport across CNT-metal interfaces,&quot; AFOSR Thermal Sciences Annual Grantees Meeting, Washington DC, September 26-28, 2011</p>\n            \n        ",
     "id": "publication-156"
+  },
+  {
+    "id": "publication-169",
+    "category": "Related Coverage",
+    "category_id": "coverage",
+    "year": "2026",
+    "title": "TMS2026 Best Poster Awards",
+    "citation_html": "<p>Jillian Schultz. “TMS2026 Best Poster Awards.” <em>JOM</em> 78 (6), 5182-5184. 2026. <a href=\"https://link.springer.com/article/10.1007/s11837-026-08398-z\">View publication ↗</a></p><p class=\"record-note\">Related coverage listed on Google Scholar; authored by Jillian Schultz.</p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:YsrPvlHIBpEC",
+    "scholar_title": "TMS2026 Best Poster Awards",
+    "scholar_checked": "2026-10-16"
+  },
+  {
+    "id": "publication-172",
+    "category": "Other Scholarly Records",
+    "category_id": "other-records",
+    "year": "2024",
+    "title": "Synthetic superstructures showing polymorphism, coherent responsiveness, and parallel reactions in phase separation",
+    "citation_html": "<p>Priyadarshi Ranjan, Moussa Diame Faye Diouf, Aswin Asaithambi, Iyyappa Rajan Panneerselvam, Yan Wang, Liberato Manna, Mauro Gemmi, Ilka Kriegel. “Synthetic superstructures showing polymorphism, coherent responsiveness, and parallel reactions in phase separation.” 2024.</p><p class=\"record-note\">Venue and publication type are not specified in the Google Scholar record.</p>",
+    "added_from_scholar": "2026-10-16",
+    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AMlEppAAAAAJ&pagesize=100&citation_for_view=AMlEppAAAAAJ:PyEswDtIyv0C",
+    "scholar_title": "Synthetic superstructures showing polymorphism, coherent responsiveness, and parallel reactions in phase separation",
+    "scholar_checked": "2026-10-16"
   }
 ]

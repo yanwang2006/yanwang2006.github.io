@@ -9,6 +9,7 @@ team,pubs,research,education=[load(n) for n in ['team','publications','research'
 highlights=[p for p in pubs if p.get('featured')][:3]
 assert len({p['id'] for p in pubs})==len(pubs), 'Publication IDs must be unique'
 assert all(p.get('title') for p in highlights), 'Featured publications need titles'
+featured_people=[p for p in team if p.get('featured') and p.get('status','current')!='alumni'][:3]
 nav=[('index','Home'),('research','Research'),('team','Team'),('publications','Publications'),('education','Education')]
 def links(items):return ' '.join(f'<a class="text-link" href="{e(x["url"],quote=True)}">{e(x["label"])} <span aria-hidden="true">↗</span></a>' for x in items)
 def page(name,title,content):
@@ -34,16 +35,22 @@ home=f'''<section class="hero"><img class="hero-image" src="images/home.jpg" alt
 <section id="about" class="section container about"><div><p class="eyebrow">A closer look. A broader perspective.</p><h2>Understanding energy.<br>Engineering possibility.</h2></div><div><p class="large-copy">We study how thermal and mechanical processes shape the way energy moves, transforms, and can be put to work.</p><p>Led by Dr. Yan Wang, our group combines theoretical and computational approaches to investigate transport across length and time scales—with a focus on energy applications and advanced manufacturing.</p><a class="text-link" href="team.html">Get to know our laboratory ↗</a></div></section>
 <section class="research-band"><div class="container section">{heading('What we investigate','Research across scales.','research.html','All research')}<div class="areas">{area_html}</div></div></section>
 <section class="section container" id="publications">{heading('From the laboratory','Recent publications.','publications.html','Full publication record')}<div class="teasers">{highlight_html}</div></section>
-<section class="people-feature" id="team"><div class="container people-feature-inner"><div><p class="eyebrow">The people behind the science</p><h2>Curiosity is a<br>collaborative pursuit.</h2><p>Meet the researchers exploring thermal transport, materials, and energy at the University of Nevada, Reno.</p><a class="button" href="team.html">Meet our team ↗</a></div><div class="portrait-strip">{''.join(f'<a href="team.html#person-{i}" aria-label="Meet {e(team[i]["name"])}"><img src="{team[i]["image"]}" alt="{e(team[i]["name"])}" loading="lazy"></a>' for i in [0,1,3])}</div></div></section>
+<section class="people-feature" id="team"><div class="container people-feature-inner"><div><p class="eyebrow">The people behind the science</p><h2>Curiosity is a<br>collaborative pursuit.</h2><p>Meet the researchers exploring thermal transport, materials, and energy at the University of Nevada, Reno.</p><a class="button" href="team.html">Meet our team ↗</a></div><div class="portrait-strip">{''.join(f'<a href="team.html#{p["id"]}" aria-label="Meet {e(p["name"])}"><img src="{p["image"]}" alt="{e(p["name"])}" style="object-position:{e(p.get("image_position","center 30%"))}" loading="lazy"></a>' for p in featured_people)}</div></div></section>
 <section class="section container education-home" id="education"><p class="eyebrow">Teaching & mentorship</p><h2>The next generation<br>of engineering starts here.</h2><div><p>From heat transfer courses to undergraduate research and K–12 outreach, we connect scientific ideas with hands-on learning.</p><a class="text-link" href="education.html">Explore education & outreach ↗</a></div></section>'''
 page('index','Home',home)
 pi=team[0]
 people=intro('Our people','A shared curiosity.','Meet the people advancing thermal science, materials, and energy in the Wang Research Group.')
 people+=f'<section class="section container"><div class="pi" id="person-0"><img src="{pi["image"]}" alt="Portrait of Dr. Yan Wang"><div><p class="eyebrow">Principal investigator</p><h2>{e(pi["name"])}</h2><p class="role">{e(pi["role"])} · Mechanical Engineering</p><p>{e(pi["bio"])}</p><div class="person-links">{links(pi["links"])}</div></div></div></section>'
-people+='<section class="team-section section container">'+heading('Research team','Meet the group.')+'<div class="team-grid">'
-for i,p in enumerate(team[1:],1):
- people+=f'<article class="person" id="person-{i}"><img src="{p["image"]}" alt="Portrait of {e(p["name"])}" loading="lazy"><div class="person-copy"><p class="eyebrow">{e(p["role"])}</p><h3>{e(p["name"])}</h3><details><summary>Biography <span aria-hidden="true">+</span></summary><p>{e(p["bio"])}</p></details><div class="person-links">{links(p["links"])}</div></div></article>'
-people+='</div></section>';page('team','Team',people)
+def person_card(p):
+ bio=''.join('<p>'+e(part)+'</p>' for part in p['bio'].split('\n\n'))
+ return f'<article class="person" id="{p["id"]}"><img src="{p["image"]}" alt="Portrait of {e(p["name"])}" style="object-position:{e(p.get("image_position","center 30%"))}" loading="lazy"><div class="person-copy"><p class="eyebrow">{e(p["role"])}</p><h3>{e(p["name"])}</h3><details><summary>Biography <span aria-hidden="true">+</span></summary>{bio}</details><div class="person-links">{links(p["links"])}</div></div></article>'
+people+='<section id="current-team" class="team-section section container">'+heading('Research team','Meet the group.')+'<div class="team-grid">'
+people+=''.join(person_card(p) for p in team[1:] if p.get('status','current')!='alumni')
+people+='</div></section>'
+alumni=[p for p in team if p.get('status')=='alumni']
+if alumni:
+ people+='<section id="alumni" class="team-section section container">'+heading('Our graduates','Alumni.')+'<div class="team-grid">'+''.join(person_card(p) for p in alumni)+'</div></section>'
+page('team','Team',people)
 res=intro('Our research','From atoms to applications.','Thermal transport, light–matter interactions, and materials design—connected through theory and computation.')
 res+='<div class="container research-layout section"><aside class="topic-nav"><p class="eyebrow">Explore the research</p>'+''.join(f'<a href="#{r["id"]}"><span>0{i+1}</span> {e(r["title"].split(":")[0])}</a>' for i,r in enumerate(research))+'</aside><div>'
 for i,r in enumerate(research):
@@ -52,12 +59,13 @@ for i,r in enumerate(research):
 res+='</div></div>';page('research','Research',res)
 categories=list(dict.fromkeys((p['category_id'],p['category']) for p in pubs));years=sorted(set(p['year'] for p in pubs),reverse=True)
 publication=intro('Publications & scholarly activity','Ideas, shared.','Explore journal articles, conference contributions, research tools, and presentations from our group.')
-publication+='''<section class="section container publication-section"><div class="filters" hidden><div class="search-field"><label for="search">Search the research record</label><input id="search" type="search" placeholder="Search author, title, journal, or keyword…"></div><div><label for="category">Type</label><select id="category"><option value="">All types</option>'''+''.join(f'<option value="{c}">{e(t)}</option>' for c,t in categories)+'''</select></div><div><label for="year">Year</label><select id="year"><option value="">All years</option>'''+''.join(f'<option>{y}</option>' for y in years)+'''</select></div><button id="reset" class="reset">Clear filters</button></div><p id="result-count" class="result-count" role="status" aria-live="polite">'''+str(len(pubs))+''' records</p><div class="publication-layout"><aside class="publication-nav"><p class="eyebrow">Browse by type</p>'''+''.join(f'<a href="#{c}">{e(t)} <span>{sum(p["category_id"]==c for p in pubs)}</span></a>' for c,t in categories)+'''</aside><div class="records">'''
+publication+='''<section class="section container publication-section"><div class="scholar-note"><p>Publication list checked against Google Scholar on October 16, 2026. Preprints, books, and related coverage are listed separately.</p><a class="text-link" href="https://scholar.google.com/citations?user=AMlEppAAAAAJ&amp;hl=en">Google Scholar profile ↗</a></div><div class="filters" hidden><div class="search-field"><label for="search">Search the research record</label><input id="search" type="search" placeholder="Search author, title, journal, or keyword…"></div><div><label for="category">Type</label><select id="category"><option value="">All types</option>'''+''.join(f'<option value="{c}">{e(t)}</option>' for c,t in categories)+'''</select></div><div><label for="year">Year</label><select id="year"><option value="">All years</option>'''+''.join(f'<option>{y}</option>' for y in years)+'''</select></div><button id="reset" class="reset">Clear filters</button></div><p id="result-count" class="result-count" role="status" aria-live="polite">'''+str(len(pubs))+''' records</p><div class="publication-layout"><aside class="publication-nav"><p class="eyebrow">Browse by type</p>'''+''.join(f'<a href="#{c}">{e(t)} <span>{sum(p["category_id"]==c for p in pubs)}</span></a>' for c,t in categories)+'''</aside><div class="records">'''
 for c,t in categories:
  publication+=f'<section class="record-group" id="{c}"><h2>{e(t)}</h2><ol class="record-list">'
  for i,p in enumerate(pubs):
   if p['category_id']!=c:continue
-  publication+=f'<li class="record" id="{p["id"]}" data-year="{p["year"]}" data-category="{c}"><span class="record-year">{p["year"]}</span><div>{p["citation_html"]}</div></li>'
+  scholar_link=f'<a class="record-source" href="{e(p["scholar_url"],quote=True)}">Google Scholar ↗</a>' if p.get('scholar_url') else ''
+  publication+=f'<li class="record" id="{p["id"]}" data-year="{p["year"]}" data-category="{c}"><span class="record-year">{p["year"]}</span><div>{p["citation_html"]}{scholar_link}</div></li>'
  publication+='</ol></section>'
 publication+='</div></div><div class="empty-state" hidden><h2>No matching records.</h2><p>Try another keyword, year, or publication type.</p></div></section>'
 page('publications','Publications',publication)
